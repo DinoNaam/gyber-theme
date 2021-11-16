@@ -1,0 +1,21 @@
+{%- liquid
+  unless grid_item_width
+    assign grid_item_width = 'small--one-half medium-up--one-third'
+  endunless
+
+  unless background_position
+    assign background_position = 'center center'
+  endunless
+
+  if block.settings.title != blank
+    assign title_output = block.settings.title
+  else
+    assign title_output = 'Icon Title'
+  endif
+-%}
+
+<div class="grid__item {{ grid_item_width }} paul-icon-text-item">
+  {{ block.settings.icon }}
+  <h4>{{ title_output }}</h4>
+  <p>{{ block.settings.desc }}</p>
+</div>

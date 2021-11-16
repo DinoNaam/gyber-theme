@@ -32,7 +32,7 @@
         endcase
       -%}
 
-      {%- render 'paul-collection-grid-item',
+      {%- render 'paul-icon-text-item',
         collection: collection,
         block: block,
         grid_item_width: grid_item_width,
@@ -57,17 +57,20 @@
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
 {% schema %}
   {
-    "name": "Customed Collection list",
+    "name": "Customed Icon & Text",
     "class": "index-section",
-    "max_blocks": 15,
+    "max_blocks": 5,
     "settings": [
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Customed Collection list"
+        "default": "Customed Icon & Text"
       },
       {
         "type": "checkbox",
@@ -79,41 +82,55 @@
         "type": "range",
         "id": "per_row",
         "label": "Collections per row",
-        "default": 4,
+        "default": 5,
         "min": 2,
         "max": 5,
         "step": 1
       }
     ],
     "presets": [{
-      "name": "Customed Collection list",
+      "name": "Customed Icon & Text",
       "category": "Collection",
       "blocks": [
         {
-          "type": "collection"
+          "type": "item"
         },
         {
-          "type": "collection"
+          "type": "item"
         },
         {
-          "type": "collection"
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
         }
       ]
     }],
     "blocks": [
       {
-        "type": "collection",
-        "name": "Collection",
+        "type": "item",
+        "name": "Item",
         "settings": [
           {
-            "id": "collection",
-            "type": "collection",
-            "label": "Collection"
+            "id": "icon",
+            "type": "textarea",
+            "label": "Icon (SVG)",
+            "info": "Needs SVG Format, paste the svg codes here."
           },
           {
             "type": "text",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "default": "Icon Title"
+          },
+          {
+            "type": "textarea",
+            "id": "desc",
+            "label": "Description",
+            "default": "Icon Description"
           }
         ]
       }

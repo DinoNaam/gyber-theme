@@ -1,4 +1,6 @@
-/* Here is a modified File By Paul */
+/*
+  Here is a modified File By Paul!
+*/
 :root{
   --paul-primary: #ff5d00;
 }
@@ -12,6 +14,7 @@
 }
 
 
+/* Customed Collection */
 .paul-collection-item{
   color: #ff5d00;
   color: var(--paul-primary);
@@ -39,4 +42,20 @@
   margin-top: 2em;
   padding-left: 3em;
   padding-right: 3em;
+}
+
+
+/*  Customed Icon & Text */
+.paul-icon-text-item{
+  text-align: center;
+}
+
+.paul-icon-text-item svg{
+  margin: auto;
+  max-width: 4em;
+}
+
+.paul-icon-text-item p{
+  opacity: .6;
+  font-size: .875em;
 }
