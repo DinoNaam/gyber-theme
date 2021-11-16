@@ -1,0 +1,42 @@
+/* Here is a modified File By Paul */
+:root{
+  --paul-primary: #ff5d00;
+}
+
+.paul-btn{
+  padding: .5em .75em;
+  display: inline-block;
+  color: var(--paul-primary);
+  border-radius: .5em;
+  border: 2px solid var(--paul-primary);
+}
+
+
+.paul-collection-item{
+  color: #ff5d00;
+  color: var(--paul-primary);
+  text-align: center;
+}
+
+.paul-collection-item .paul-collection-image-wrapper{
+  margin: auto;
+  max-width: 10em;
+}
+
+.paul-collection-item .paul-collection-image{
+  height: 0;
+  padding-bottom: 100%;
+  background: center/cover;
+  -webkit-box-reflect: below 0 linear-gradient(to top, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, .0) 25%);
+}
+
+.paul-collection-item span{
+  display: block;
+  margin-top: 3em;
+}
+
+.paul-collection-item .paul-btn{
+  margin-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
