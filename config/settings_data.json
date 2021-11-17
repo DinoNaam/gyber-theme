@@ -1070,7 +1070,7 @@
         "settings": {
           "title": "Customed Collection list",
           "divider": false,
-          "per_row": 4
+          "per_row": 3
         }
       }
     },
