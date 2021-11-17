@@ -257,17 +257,6 @@
           "social_sharing_blog": true
         }
       },
-      "1498163293234": {
-        "type": "featured-content",
-        "settings": {
-          "title": "",
-          "text": "<p>A sentence or two introducing your brand, what you sell, and what makes your brand compelling to customers.<\/p>",
-          "align_text": "center",
-          "narrow_column": true,
-          "enlarge_text": true,
-          "divider": false
-        }
-      },
       "blog-template": {
         "type": "blog-template",
         "settings": {
@@ -1076,16 +1065,15 @@
     },
     "content_for_index": [
       "1524769873765",
-      "1498163293234",
+      "16371190808a9ba7e5",
+      "1637133657d8d7934c",
       "1525912530555",
       "1499789718857",
       "1525886124958",
       "1525295772132",
       "1499790633921",
       "1525115199973",
-      "1525118065355",
-      "16371190808a9ba7e5",
-      "1637133657d8d7934c"
+      "1525118065355"
     ]
   },
   "presets": {
