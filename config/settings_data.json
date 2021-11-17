@@ -719,7 +719,7 @@
         "type": "blog-posts",
         "settings": {
           "title": "From the journal",
-          "blog": "news",
+          "blog": "recipe",
           "post_limit": 3,
           "blog_show_tags": false,
           "blog_show_date": true,
@@ -1061,6 +1061,15 @@
           "divider": false,
           "per_row": 3
         }
+      },
+      "163713800117e7b97b": {
+        "type": "newsletter",
+        "settings": {
+          "title": "Sign up and save",
+          "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+          "color_background": "#f9f9f9",
+          "color_text": "#1c1d1d"
+        }
       }
     },
     "content_for_index": [
@@ -1073,7 +1082,8 @@
       "1525295772132",
       "1499790633921",
       "1525115199973",
-      "1525118065355"
+      "1525118065355",
+      "163713800117e7b97b"
     ]
   },
   "presets": {
