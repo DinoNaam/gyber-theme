@@ -1036,6 +1036,42 @@
           "divider": false,
           "per_row": 5
         }
+      },
+      "1637133657d8d7934c": {
+        "type": "paul-featured-collections",
+        "blocks": {
+          "1637133657d8d7934c-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "gas-infrared-grills",
+              "title": ""
+            }
+          },
+          "1637133657d8d7934c-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "pizza-ovens",
+              "title": ""
+            }
+          },
+          "1637133657d8d7934c-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "accessories",
+              "title": ""
+            }
+          }
+        },
+        "block_order": [
+          "1637133657d8d7934c-0",
+          "1637133657d8d7934c-1",
+          "1637133657d8d7934c-2"
+        ],
+        "settings": {
+          "title": "Customed Collection list",
+          "divider": false,
+          "per_row": 4
+        }
       }
     },
     "content_for_index": [
@@ -1048,7 +1084,8 @@
       "1499790633921",
       "1525115199973",
       "1525118065355",
-      "16371190808a9ba7e5"
+      "16371190808a9ba7e5",
+      "1637133657d8d7934c"
     ]
   },
   "presets": {
