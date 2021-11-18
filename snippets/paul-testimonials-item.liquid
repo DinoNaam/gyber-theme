@@ -1,0 +1,18 @@
+{%- liquid
+  if block.settings.comment != blank
+    assign comment_output = block.settings.comment
+  else
+    assign comment_output = 'Please Set Comment'
+  endif
+
+  if block.settings.author != blank
+    assign author_output = block.settings.author
+  else
+    assign author_output = 'Please Set Author'
+  endif
+-%}
+
+<div class="paul-testimonial-item">
+  <h3>"{{ comment_output }}"</h3>
+  <p>{{ author_output }}</p>
+</div>

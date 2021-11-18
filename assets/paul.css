@@ -59,3 +59,105 @@
   opacity: .6;
   font-size: .875em;
 }
+
+
+/* Testimonials */
+.paul-testimonial-section .section-header{
+  padding: 45px 0;
+  padding-bottom: 60px;
+  position: relative;
+  background-color: var(--paul-primary);
+}
+
+.paul-testimonial-section .section-header .page-width{
+  max-width: 1000px;
+}
+
+.paul-testimonial-section .section-header p{
+  margin-bottom: 2em;
+}
+
+.paul-testimonial-section .section-header__icon{
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.paul-testimonial-section .section-header__icon svg{
+  width: 8em;
+  height: 8em;
+}
+
+
+.paul-testimonial-section .section-content{
+  padding: 45px 0;
+}
+
+.paul-testimonial-section .section-content .page-width{
+  max-width: 1200px;
+}
+
+.paul-testimonial-section .paul-testimonial-wrap{
+  padding: 0 3em;
+  position: relative;
+}
+
+.paul-testimonial-section .paul-testimonial-wrap:before,
+.paul-testimonial-section .paul-testimonial-wrap:after{
+  top: 30%;
+  opacity: .6;
+  font-size: 4em;
+  position: absolute;
+  color: var(--paul-primary);
+}
+
+.paul-testimonial-section .paul-testimonial-wrap:before{
+  left: 0;
+  content: "“";
+}
+
+.paul-testimonial-section .paul-testimonial-wrap:after{
+  right: 0;
+  content: "”";
+}
+
+
+/* Reviews */
+.paul-reviews-section{
+  padding: 45px 0;
+  background: #333;
+}
+
+.paul-reviews-section .section-header{
+  color: #fff;
+}
+
+.paul-reviews-section .paul-review-item{
+  padding: 1em;
+  background: #fff;
+  border-radius: .5em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.paul-reviews-section .paul-review-item:before,
+.paul-reviews-section .paul-review-item:after{
+  content: "";
+  height: 2em;
+  position: absolute;
+  background: rgba(255, 255, 255, .3);
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+
+.paul-reviews-section .paul-review-item:before{
+  left: .75em;
+  right: .75em;
+  bottom: -.75em;
+}
+
+.paul-reviews-section .paul-review-item:after{
+  left: 1.75em;
+  right: 1.75em;
+  bottom: -1.5em;
+}

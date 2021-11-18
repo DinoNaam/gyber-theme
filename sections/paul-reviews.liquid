@@ -1,0 +1,132 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-reviews-section">
+  <div class="section-header">
+    {%- if section.settings.title != blank -%}
+      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+      {%- if section.settings.text != blank -%}
+        <p>{{ section.settings.text }}</p>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+  <div class="section-content">
+    <div class="page-width">
+      <div class="grid grid--uniform">
+        {%- liquid
+          assign isEmpty = true
+          if section.blocks.size > 0
+            assign isEmpty = false
+          endif
+        -%}
+
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign collection = collections[block.settings.collection]
+            assign background_position = block.settings.focal_point
+
+            case section.settings.per_row
+              when 2
+                assign grid_item_width = 'medium-up--one-half'
+              when 3
+                assign grid_item_width = 'small--one-half medium-up--one-third'
+              when 4
+                assign grid_item_width = 'small--one-half medium-up--one-quarter'
+              when 5
+                assign grid_item_width = 'small--one-half medium-up--one-fifth'
+            endcase
+          -%}
+
+          {%- render 'paul-reviews-item',
+            collection: collection,
+            block: block,
+            grid_item_width: grid_item_width,
+            per_row: section.settings.per_row
+          -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if isEmpty -%}
+        <div class="page-width">
+          <div class="grid">
+            <div class="grid__item">
+              <div class="rte">
+                {{ 'home_page.onboarding.no_content' | t }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Customed Reviews",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Our Customers Say"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here is what our customers say about our products"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Collections per row",
+        "default": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "presets": [{
+      "name": "Customed Reviews",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "id": "author",
+            "type": "text",
+            "label": "Author"
+          },
+          {
+            "id": "content",
+            "type": "text",
+            "label": "Content"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

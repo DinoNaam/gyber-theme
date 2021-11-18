@@ -1,0 +1,22 @@
+{%- liquid
+  unless grid_item_width
+    assign grid_item_width = 'small--one-half medium-up--one-third'
+  endunless
+
+  unless background_position
+    assign background_position = 'center center'
+  endunless
+
+  if block.settings.comment != blank
+    assign title_output = block.settings.comment
+  else
+    assign title_output = 'Comments by the author'
+  endif
+-%}
+
+<div class="grid__item {{ grid_item_width }}">
+  <div class="paul-review-item">
+    {{ block.settings.comment }}
+    <h4>{{ title_output }}</h4>
+  </div>
+</div>
