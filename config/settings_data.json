@@ -1058,7 +1058,7 @@
           "1637133657d8d7934c-2"
         ],
         "settings": {
-          "title": "Customed Collection list",
+          "title": "",
           "divider": false,
           "per_row": 3
         }
@@ -1071,11 +1071,52 @@
           "color_background": "#f9f9f9",
           "color_text": "#1c1d1d"
         }
+      },
+      "16372055891d7512d0": {
+        "type": "text-columns",
+        "blocks": {
+          "16372055891d7512d0-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/3-1_3df385d4-9bea-4e48-9913-732d736e5cc6.png",
+              "image_width_limit": false,
+              "image_width": 650,
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/products\/fremont-wood-fired-pizza-oven"
+            }
+          },
+          "16372055891d7512d0-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/3-2.png",
+              "image_width_limit": false,
+              "image_width": 650,
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/all"
+            }
+          }
+        },
+        "block_order": [
+          "16372055891d7512d0-0",
+          "16372055891d7512d0-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left",
+          "divider": false
+        }
       }
     },
     "content_for_index": [
       "1524769873765",
       "16371190808a9ba7e5",
+      "16372055891d7512d0",
       "1637133657d8d7934c",
       "1525912530555",
       "1499789718857",
