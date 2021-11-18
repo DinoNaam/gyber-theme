@@ -16,8 +16,8 @@
     "color_header_text": "#ffffff",
     "color_announcement": "#ff4f33",
     "color_announcement_text": "#ffffff",
-    "color_footer": "#ffffff",
-    "color_footer_text": "#000000",
+    "color_footer": "#000000",
+    "color_footer_text": "#ffffff",
     "color_drawer_background": "#ffffff",
     "color_drawer_text": "#000000",
     "color_drawer_border": "#e8e8e1",
@@ -235,7 +235,7 @@
           "show_currency_selector": true,
           "show_currency_flags": true,
           "show_payment_icons": false,
-          "show_copyright": false,
+          "show_copyright": true,
           "copyright_text": ""
         }
       },
