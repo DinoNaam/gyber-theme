@@ -185,8 +185,24 @@
           "1494301487049": {
             "type": "menu",
             "settings": {
-              "show_footer_title": false,
+              "show_footer_title": true,
               "menu": "footer",
+              "container_width": 25
+            }
+          },
+          "13fa7bc8-65e6-49b0-bfae-1611c0fc7db1": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "products",
+              "container_width": 25
+            }
+          },
+          "bc718af1-61ed-481e-8142-1180f771b4f8": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "customer-service",
               "container_width": 25
             }
           },
@@ -196,7 +212,7 @@
               "show_footer_title": true,
               "title": "Sign up and save",
               "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-              "container_width": 33
+              "container_width": 25
             }
           },
           "1494301487048": {
@@ -209,6 +225,8 @@
         },
         "block_order": [
           "1494301487049",
+          "13fa7bc8-65e6-49b0-bfae-1611c0fc7db1",
+          "bc718af1-61ed-481e-8142-1180f771b4f8",
           "1494292487693",
           "1494301487048"
         ],
