@@ -1129,6 +1129,21 @@
           "align_text": "left",
           "divider": false
         }
+      },
+      "16372071826c7b3c92": {
+        "type": "hero-video",
+        "settings": {
+          "title": "WHY CHOOSE GYBER PELLET GRILL?",
+          "title_size": 45,
+          "subheading": "",
+          "link_text": "Learn More",
+          "link": "shopify:\/\/pages\/test",
+          "color_accent": "#ff4f33",
+          "text_align": "vertical-center horizontal-center",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "section_height": "650px",
+          "mobile_height": "auto"
+        }
       }
     },
     "content_for_index": [
@@ -1136,6 +1151,7 @@
       "16371190808a9ba7e5",
       "16372055891d7512d0",
       "1637133657d8d7934c",
+      "16372071826c7b3c92",
       "1525912530555",
       "1499789718857",
       "1525886124958",
