@@ -635,15 +635,16 @@
             "type": "image",
             "settings": {
               "top_subheading": "",
-              "title": "BE YOU \nBE BEAUTIFUL",
-              "title_size": 80,
-              "subheading": "Shop our exciting collections now",
+              "title": "FOR THE ULTIMATE COOKING EXPERIENCE",
+              "title_size": 40,
+              "subheading": "",
               "link": "shopify:\/\/collections\/all",
-              "link_text": "Shop this",
+              "link_text": "Shop Now",
               "link_2": "shopify:\/\/collections\/all",
               "link_text_2": "",
-              "color_accent": "#141111",
+              "color_accent": "#ff4f33",
               "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/Konachan.com_-_261400_blue_eyes_blue_hair_blush_chibi_inishie_shima_rin_short_hair_translation_request_yuru_camp.png",
               "focal_point": "top center"
             }
           },
