@@ -1,0 +1,15 @@
+{%- if block.settings.image != blank -%}
+  {%- if block.settings.url != blank -%}<a href="{{ block.settings.url }}">{%- else -%}<span>{%- endif -%}
+    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+    <img class="feature-row__image lazyload"
+      data-src="{{ img_url }}"
+      data-widths="[180, 360, 540, 720, 900, 1080]"
+      data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+      data-sizes="auto"
+      alt="{{ block.settings.image.alt }}"
+    />
+  {%- if block.settings.url != blank -%}</a>{%- else -%}</span>{%- endif -%}
+{%- else -%}
+  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+{%- endif -%}

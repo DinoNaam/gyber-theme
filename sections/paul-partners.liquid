@@ -1,0 +1,94 @@
+<div class="paul-partners-section">
+  <div class="section-header">
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="section-content">
+    <div class="page-width">
+      {%- liquid
+        assign isEmpty = true
+        if section.blocks.size > 0
+          assign isEmpty = false
+        endif
+      -%}
+
+      <div class="paul-partners-grid">
+        {%- for block in section.blocks -%}
+          {%- render 'paul-partners-item',
+            block: block
+          -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if isEmpty -%}
+        <div class="grid">
+          <div class="grid__item">
+            <div class="rte">
+              {{ 'home_page.onboarding.no_content' | t }}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Customed Partners",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Our Partners"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here is what our customers say about our products"
+      }
+    ],
+    "presets": [{
+      "name": "Customed Partners",
+      "category": "Image",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "url",
+            "type": "url",
+            "label": "URL"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
