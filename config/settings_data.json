@@ -1151,27 +1151,51 @@
           "1637232902e90d9fbe-0": {
             "type": "item",
             "settings": {
-              "author": "",
-              "content": ""
+              "score": 5,
+              "product": "anvil-go-gas-infrared-grill",
+              "author": "Lilah Ioselev",
+              "comment": "This product is very good and very convenient to use. Family and friends like it. Will continue to buy back."
             }
           },
           "1637232902e90d9fbe-1": {
             "type": "item",
             "settings": {
+              "score": 5,
+              "product": "boulder-gas-infrared-grill",
+              "author": "Aryn Jacobssen",
+              "comment": "This product is very good and very convenient to use. Family and friends like it. Will continue to buy back."
+            }
+          },
+          "818a111f-27ad-4ad2-a3db-f76b6fb55a23": {
+            "type": "item",
+            "settings": {
+              "score": 5,
+              "product": "gyber-bbq-tool-set",
               "author": "",
-              "content": ""
+              "comment": ""
+            }
+          },
+          "fb3d60f0-d38c-45fc-b0cf-a52f4261a1c3": {
+            "type": "item",
+            "settings": {
+              "score": 5,
+              "product": "",
+              "author": "",
+              "comment": ""
             }
           }
         },
         "block_order": [
           "1637232902e90d9fbe-0",
-          "1637232902e90d9fbe-1"
+          "1637232902e90d9fbe-1",
+          "818a111f-27ad-4ad2-a3db-f76b6fb55a23",
+          "fb3d60f0-d38c-45fc-b0cf-a52f4261a1c3"
         ],
         "settings": {
           "title": "Our Customers Say",
           "text": "Here is what our customers say about our products",
           "divider": false,
-          "per_row": 3
+          "per_row": 4
         }
       },
       "163723291745df0397": {
