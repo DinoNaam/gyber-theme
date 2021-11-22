@@ -597,7 +597,7 @@
               "link_text_2": "",
               "color_accent": "#ff4f33",
               "text_align": "vertical-center horizontal-center",
-              "image": "shopify:\/\/shop_images\/Konachan.com_-_261400_blue_eyes_blue_hair_blush_chibi_inishie_shima_rin_short_hair_translation_request_yuru_camp.png",
+              "image": "shopify:\/\/shop_images\/topbanner.jpg",
               "focal_point": "top center"
             }
           },
@@ -952,8 +952,10 @@
         "settings": {
           "title": "Add some flavor to your inbox!",
           "text": "<p>Sign up for our newsletter and get delicious recipes for your pizza oven and grill.<\/p>",
+          "image_background": "shopify:\/\/shop_images\/newsletterbg.jpg",
           "color_background": "#f9f9f9",
-          "color_text": "#1c1d1d"
+          "color_text": "#1c1d1d",
+          "color_accent": "#ff4f33"
         }
       },
       "16372055891d7512d0": {
