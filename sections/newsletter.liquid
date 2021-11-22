@@ -1,12 +1,37 @@
+{%- liquid
+  if section.settings.image_background != blank
+    assign color = '#fff'
+  else
+    assign color = section.settings.color_text
+  endif
+-%}
+
 {%- style -%}
   .newsletter-{{ section.id }} {
-    background-color: {{ section.settings.color_background }};
-    color: {{ section.settings.color_text }};
+    color: {{ color }};
+    {%- if section.settings.image_background != blank -%}
+      background: url({{ section.settings.image_background | image_url: width: 2000 }}) center/cover;
+    {%- else -%}
+      background-color: {{ section.settings.color_background }};
+    {%- endif -%}
   }
 
-  .newsletter-{{ section.id }} .newsletter__input::-webkit-input-placeholder { color: {{ section.settings.color_text }}; }
-  .newsletter-{{ section.id }} .newsletter__input::-moz-placeholder { color: {{ section.settings.color_text }}; }
-  .newsletter-{{ section.id }} .newsletter__input::-ms-input-placeholder { color: {{ section.settings.color_text }}; }
+  {% unless section.settings.color_accent contains 'rgba(0,0,0,0)' %}
+    .newsletter-{{ section.id }} .btn {
+      background: {{ section.settings.color_accent }} !important;
+      border: none;
+
+      {%- assign accent_brightness = section.settings.color_accent | color_extract: 'lightness' -%}
+
+      {% if accent_brightness > 60 %}
+        color: #000 !important;
+      {% endif %}
+    }
+  {% endunless %}
+
+  .newsletter-{{ section.id }} .newsletter__input::-webkit-input-placeholder { color: {{ color }}; }
+  .newsletter-{{ section.id }} .newsletter__input::-moz-placeholder { color: {{ color }}; }
+  .newsletter-{{ section.id }} .newsletter__input::-ms-input-placeholder { color: {{ color }}; }
 {%- endstyle -%}
 
 <div class="newsletter-section newsletter-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} newsletter-section--with-divider{% endif %}">
@@ -43,6 +68,12 @@
         "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
       },
       {
+        "type": "image_picker",
+        "id": "image_background",
+        "label": "Background Image",
+        "info": "If you choosed image, the background color will be change to black."
+      },
+      {
         "type": "color",
         "id": "color_background",
         "label": "Background",
@@ -53,6 +84,12 @@
         "id": "color_text",
         "label": "Text",
         "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Buttons",
+        "default": "rgba(0,0,0,0)"
       }
     ],
     "presets": [

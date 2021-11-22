@@ -136,12 +136,24 @@
   color: #fff;
 }
 
+.paul-reviews-section .grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paul-reviews-section .grid__item{
+  margin-bottom: 2em;
+}
+
 .paul-reviews-section .paul-review-item{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
   padding: 1em;
   background: #fff;
   border-radius: .5em;
   position: relative;
-  margin-bottom: 2em;
 }
 
 .paul-reviews-section .paul-review-item:before,
@@ -172,6 +184,10 @@
 
 .paul-review-item .item-stars .icon{
   fill: #ffae01;
+}
+
+.paul-review-item .item-comment{
+  flex: 1;
 }
 
 .paul-review-item .item-image img{
@@ -207,5 +223,7 @@
 
 .paul-partners-section .paul-partners-grid img{
   width: auto;
+  height: auto;
+  max-width: 85%;
   max-height: 4em;
 }

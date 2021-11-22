@@ -31,7 +31,7 @@
     {%- if block.settings.product != blank -%}
       <h4>{{ block.settings.product.title }}</h4>
     {%- endif -%}
-    <p class="text-secondly">{{ comment_output }}</p>
+    <p class="item-comment text-secondly">{{ comment_output }}</p>
     {%- if block.settings.product != blank -%}
       <p class="item-image"><img src="{{ block.settings.product | image_url: width: 300 }}" alt="{{ block.settings.product.name }}"/></p>
     {%- endif -%}
