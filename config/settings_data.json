@@ -1192,8 +1192,8 @@
           "fb3d60f0-d38c-45fc-b0cf-a52f4261a1c3"
         ],
         "settings": {
-          "title": "Our Customers Say",
-          "text": "Here is what our customers say about our products",
+          "title": "Reviews",
+          "text": "",
           "divider": false,
           "per_row": 4
         }
