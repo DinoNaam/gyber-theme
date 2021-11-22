@@ -288,71 +288,6 @@
           "blog_image_size": "wide"
         }
       },
-      "1499789718857": {
-        "type": "featured-collections",
-        "blocks": {
-          "1499789718857-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "",
-              "title": "",
-              "focal_point": "center center"
-            }
-          },
-          "1499789718857-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "",
-              "title": "",
-              "focal_point": "center center"
-            }
-          },
-          "1499789718857-2": {
-            "type": "collection",
-            "settings": {
-              "collection": "",
-              "title": "",
-              "focal_point": "center center"
-            }
-          },
-          "1499789718857-3": {
-            "type": "collection",
-            "settings": {
-              "collection": "",
-              "title": "",
-              "focal_point": "center center"
-            }
-          }
-        },
-        "block_order": [
-          "1499789718857-0",
-          "1499789718857-1",
-          "1499789718857-2",
-          "1499789718857-3"
-        ],
-        "settings": {
-          "title": "Shop by category",
-          "divider": false,
-          "per_row": 4,
-          "enable_gutter": true
-        }
-      },
-      "1499790633921": {
-        "type": "background-image-text",
-        "settings": {
-          "subtitle": "Impressive",
-          "title": "Large image with text box",
-          "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-          "button_label": "",
-          "button_link": "shopify:\/\/collections\/all",
-          "focal_point": "80% 0",
-          "color_border": "#cdb8ac",
-          "layout": "left",
-          "height": 750,
-          "framed": false,
-          "parallax": true
-        }
-      },
       "product-sections-template": {
         "type": "product-sections-template",
         "blocks": {
@@ -737,7 +672,7 @@
       "1525115199973": {
         "type": "blog-posts",
         "settings": {
-          "title": "From the journal",
+          "title": "Featured Recipes",
           "blog": "recipe",
           "post_limit": 3,
           "blog_show_tags": false,
@@ -747,18 +682,6 @@
           "view_all": true,
           "blog_image_size": "wide",
           "divider": false
-        }
-      },
-      "1525118065355": {
-        "type": "map",
-        "disabled": true,
-        "settings": {
-          "map_title": "Our retail store",
-          "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
-          "map_address": "301 Front St W, Toronto, ON M5V 2T6",
-          "api_key": "",
-          "show_button": true,
-          "background_image_position": "center center"
         }
       },
       "1525295772132": {
@@ -835,63 +758,6 @@
           "full_width": false,
           "gutter_size": 20,
           "space_above": false,
-          "space_below": false
-        }
-      },
-      "1525912530555": {
-        "type": "promo-grid",
-        "blocks": {
-          "1601500594939": {
-            "type": "advanced",
-            "settings": {
-              "subheading": "Limited time",
-              "heading": "10% off this collection",
-              "textarea": "Include the smaller details of your promotion in text below the title.",
-              "cta_text1": "Shop This",
-              "cta_link1": "",
-              "cta_text2": "",
-              "cta_link2": "",
-              "video_url": "",
-              "width": "50",
-              "height": 500,
-              "text_size": 100,
-              "text_align": "vertical-bottom horizontal-center",
-              "focal_point": "bottom",
-              "color_accent": "rgba(0,0,0,0)",
-              "boxed": false,
-              "framed": true
-            }
-          },
-          "1525912530555-0": {
-            "type": "advanced",
-            "settings": {
-              "subheading": "Limited time",
-              "heading": "10% OFF ON BAGS COLLECTION",
-              "textarea": "Include the smaller details of your promotion in text below the title.",
-              "cta_text1": "Shop This",
-              "cta_link1": "shopify:\/\/collections\/all",
-              "cta_text2": "",
-              "cta_link2": "",
-              "video_url": "",
-              "width": "50",
-              "height": 500,
-              "text_size": 100,
-              "text_align": "vertical-bottom horizontal-center",
-              "focal_point": "bottom",
-              "color_accent": "rgba(0,0,0,0)",
-              "boxed": false,
-              "framed": true
-            }
-          }
-        },
-        "block_order": [
-          "1601500594939",
-          "1525912530555-0"
-        ],
-        "settings": {
-          "full_width": true,
-          "gutter_size": 20,
-          "space_above": true,
           "space_below": false
         }
       },
@@ -1084,8 +950,8 @@
       "163713800117e7b97b": {
         "type": "newsletter",
         "settings": {
-          "title": "Sign up and save",
-          "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+          "title": "Add some flavor to your inbox!",
+          "text": "<p>Sign up for our newsletter and get delicious recipes for your pizza oven and grill.<\/p>",
           "color_background": "#f9f9f9",
           "color_text": "#1c1d1d"
         }
@@ -1287,13 +1153,9 @@
       "16372071826c7b3c92",
       "163723291745df0397",
       "1637232902e90d9fbe",
-      "1525912530555",
-      "1499789718857",
       "1525886124958",
       "1525295772132",
-      "1499790633921",
       "1525115199973",
-      "1525118065355",
       "163713800117e7b97b",
       "16373151027f141131"
     ]
