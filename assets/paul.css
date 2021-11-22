@@ -5,6 +5,10 @@
   --paul-primary: #ff5d00;
 }
 
+.text-secondly{
+  opacity: .6;
+}
+
 .paul-btn{
   padding: .5em .75em;
   display: inline-block;
@@ -162,6 +166,18 @@
   bottom: -1.5em;
 }
 
+.paul-review-item .item-stars{
+  margin-bottom: 1em;
+}
+
+.paul-review-item .item-stars .icon{
+  fill: #ffae01;
+}
+
+.paul-review-item .item-image img{
+  width: 6.5em;
+}
+
 
 /* Partners */
 .paul-partners-section{
@@ -186,6 +202,7 @@
 .paul-partners-section .paul-partners-grid span{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .paul-partners-section .paul-partners-grid img{
