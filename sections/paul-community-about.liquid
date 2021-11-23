@@ -1,0 +1,143 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-community-about-section">
+  <div class="section-header">
+    {%- if section.settings.title != blank -%}
+      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+      {%- if section.settings.text != blank -%}
+        <p>{{ section.settings.text }}</p>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+  <div class="section-content">
+    <div class="page-width">
+      <div class="grid grid--uniform grid--flush-bottom">
+        {%- liquid
+          assign isEmpty = true
+          if section.blocks.size > 0
+            assign isEmpty = false
+          endif
+        -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'image' -%}
+            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <div class="grid__item medium-up--one-third">
+              <p>
+                <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ block.settings.image.alt }}"
+                />
+              </p>
+            </div>
+          {%- else if block.type == 'text' -%}
+            <div class="grid__item medium-up--two-thirds">
+              <header>
+                <h3>{{ block.settings.author }}</h3>
+                <p class="text-secondly"><small>{{ block.settings.desc }}</small></p>
+              </header>
+              <article>
+                {{ block.settings.content }}
+              </article>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if isEmpty -%}
+        <div class="page-width">
+          <div class="grid">
+            <div class="grid__item">
+              <div class="rte">
+                {{ 'home_page.onboarding.no_content' | t }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Community About",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Meet Our Ambassadors"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here is what our customers say about our products"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "Community About",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author",
+            "default": "Paul"
+          },
+          {
+            "type": "text",
+            "id": "desc",
+            "label": "Description",
+            "default": "Programmer"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Detail Content"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

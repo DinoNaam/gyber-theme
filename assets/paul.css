@@ -227,3 +227,34 @@
   max-width: 85%;
   max-height: 4em;
 }
+
+
+/* Community About */
+.paul-community-about-section{
+  padding: 45px 0;
+}
+
+.paul-community-about-section .section-header__title{
+  padding-bottom: .5em;
+  position: relative;
+}
+.paul-community-about-section .section-header__title:after{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 8em;
+  content: "";
+  margin: auto;
+  display: block;
+  position: absolute;
+  border-bottom: 2px solid var(--paul-primary);
+}
+
+.paul-community-about-section img{
+  width: calc(100% - 1em);
+  box-shadow: 1em 1em 0 0 rgba(255, 93, 0, .5);
+}
+
+.paul-community-about-section header{
+  margin-bottom: 2em;
+}
