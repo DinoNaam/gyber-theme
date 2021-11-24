@@ -258,3 +258,44 @@
 .paul-community-about-section header{
   margin-bottom: 2em;
 }
+
+
+/* Member */
+.paul-community-member-section{
+  padding: 4em 0;
+  background: #f0f0f0;
+}
+
+.paul-community-member-section .section-header{
+  text-align: left;
+}
+
+.paul-community-member-section .section-content{
+  padding-bottom: 1.5em;
+}
+
+.paul-community-member-section .member-item{
+  height: 0;
+  display: block;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.paul-community-member-section .member-item img{
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.member-item .item-card{
+  left: 1.5em;
+  right: 1.5em;
+  bottom: -1.5em;
+  position: absolute;
+  background: #fff;
+  padding: 1em;
+}
+
+.member-item .item-card p:last-child{
+  margin-bottom: 0;
+}

@@ -1,0 +1,132 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-community-member-section">
+  <div class="section-header">
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="section-content">
+    <div class="page-width">
+      <div class="grid grid--uniform">
+        {%- liquid
+          assign isEmpty = true
+          if section.blocks.size > 0
+            assign isEmpty = false
+          endif
+        -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.settings.article != blank -%}
+            {%- assign img_url = block.settings.article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <div class="grid__item medium-up--one-third">
+              <a class="member-item" href="{{ block.settings.article.url }}">
+                <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ block.settings.article.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ block.settings.article.image.alt }}"
+                />
+                {%- liquid
+                  if block.settings.article.title != blank
+                    assign title_output = block.settings.article.title
+                  else
+                    assign title_output = 'No Title'
+                  endif
+
+                  if block.settings.article.excerpt != blank
+                    assign desc_output = block.settings.article.excerpt | strip_html
+                  else
+                    assign desc_output = 'Set this in article excerpt'
+                  endif
+                -%}
+                <div class="item-card">
+                  <h3>{{ title_output }}</h3>
+                  <p class="text-secondly"><small>{{ desc_output }}</small></p>
+                </div>
+              </a>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if isEmpty -%}
+        <div class="page-width">
+          <div class="grid">
+            <div class="grid__item">
+              <div class="rte">
+                {{ 'home_page.onboarding.no_content' | t }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Community Member",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Meet Our Ambassadors"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here is what our customers say about our products"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "Community Member",
+      "category": "Blog",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Blog Article",
+        "settings": [
+          {
+            "id": "article",
+            "type": "article",
+            "label": "Blog Article"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
