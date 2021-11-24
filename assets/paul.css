@@ -341,3 +341,26 @@
 .paul-community-video-section img{
   margin-bottom: 1em;
 }
+
+
+/* From */
+.paul-community-from-section{
+  color: #fff;
+  padding: 4em 0;
+  background: #333;
+}
+
+
+/* Product Desc Reset */
+.product-single__description h2{
+  padding-left: .5em;
+  border-left: 2px solid var(--paul-primary);
+}
+
+.product-single__description h2:before{
+  content: "";
+  display: block;
+  height: 1em;
+  width: 1em;
+  background: #888;
+}

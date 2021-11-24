@@ -1,0 +1,107 @@
+{%- style -%}
+  .paul-community-from-section-{{ section.id }} {
+    {%- if section.settings.image_background != blank -%}
+      background: url({{ section.settings.image_background | image_url: width: 2000 }}) center/cover;
+    {%- endif -%}
+  }
+{%- endstyle -%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-community-from-section paul-community-from-section-{{ section.id }}">
+  <div class="section-header">
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="section-content">
+    {%- liquid
+      assign isEmpty = true
+      if section.settings.blog != blank
+        assign isEmpty = false
+      endif
+    -%}
+    <div class="page-width">
+      <div class="grid grid--uniform">
+        {%- for article in section.settings.blog.articles limit: 20 -%}
+          {%- if article.image != blank -%}
+            {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <div class="grid__item medium-up--one-fifth">
+              <a class="member-item" href="{{ article.url }}">
+                <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ article.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ article.image.alt }}"
+                />
+              </a>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if isEmpty -%}
+        <div class="page-width">
+          <div class="grid">
+            <div class="grid__item">
+              <div class="rte">
+                {{ 'home_page.onboarding.no_content' | t }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Community From",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "From Our Gyber"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here are some of the culinary masterpieces shared by out GYBER."
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "id": "image_background",
+        "type": "image_picker",
+        "label": "Background Image"
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      }
+    ],
+    "presets": [{
+      "name": "Community From",
+      "category": "Image"
+    }]
+  }
+{% endschema %}
