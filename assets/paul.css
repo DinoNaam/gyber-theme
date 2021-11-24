@@ -5,10 +5,30 @@
   --paul-primary: #ff5d00;
 }
 
+/* 辅助类 */
 .text-secondly{
   opacity: .6;
 }
 
+.text-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-stripe-bottom{
+  position: relative;
+}
+
+.text-stripe-bottom:after{
+  content: "";
+  width: 2.5em;
+  display: block;
+  margin-top: .25em;
+  border-bottom: 2px solid var(--paul-primary);
+}
+
+/* 按钮 */
 .paul-btn{
   padding: .5em .75em;
   display: inline-block;
@@ -235,8 +255,8 @@
 }
 
 .paul-community-about-section .section-header__title{
-  padding-bottom: .5em;
   position: relative;
+  padding-bottom: .5em;
 }
 .paul-community-about-section .section-header__title:after{
   left: 0;
@@ -298,4 +318,19 @@
 
 .member-item .item-card p:last-child{
   margin-bottom: 0;
+}
+
+
+/* Video */
+.paul-community-video-section{
+  padding: 4em 0;
+  background: #f0f0f0;
+}
+
+.paul-community-video-section .section-header{
+  text-align: left;
+}
+
+.paul-community-video-section img{
+  margin-bottom: 1em;
 }
