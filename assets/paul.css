@@ -254,6 +254,10 @@
   padding: 45px 0;
 }
 
+.paul-community-about-section .page-width{
+  max-width: 1200px;
+}
+
 .paul-community-about-section .section-header__title{
   position: relative;
   padding-bottom: .5em;
@@ -290,15 +294,18 @@
   text-align: left;
 }
 
-.paul-community-member-section .section-content{
-  padding-bottom: 1.5em;
-}
-
 .paul-community-member-section .member-item{
   height: 0;
   display: block;
   position: relative;
   padding-bottom: 60%;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 768px){
+  .paul-community-member-section .member-item{
+    margin-bottom: 3.5em;
+  }
 }
 
 .paul-community-member-section .member-item img{
