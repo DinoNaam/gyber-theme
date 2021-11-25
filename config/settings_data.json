@@ -1026,7 +1026,8 @@
           "title": "Reviews",
           "text": "",
           "divider": false,
-          "per_row": 4
+          "per_row": 4,
+          "image_background": "shopify:\/\/shop_images\/333.png"
         }
       },
       "163723291745df0397": {
