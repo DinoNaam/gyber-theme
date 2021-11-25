@@ -1,6 +1,14 @@
+{%- style -%}
+  .paul-reviews-section-{{ section.id }} {
+    {%- if section.settings.image_background != blank -%}
+      background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
+    {%- endif -%}
+  }
+{%- endstyle -%}
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="paul-reviews-section">
+<div class="paul-reviews-section paul-reviews-section-{{ section.id }}">
   <div class="section-header">
     {%- if section.settings.title != blank -%}
       <h2 class="section-header__title">{{ section.settings.title }}</h2>
@@ -96,6 +104,11 @@
         "min": 2,
         "max": 4,
         "step": 1
+      },
+      {
+        "id": "image_background",
+        "type": "image_picker",
+        "label": "Background Image"
       }
     ],
     "presets": [{

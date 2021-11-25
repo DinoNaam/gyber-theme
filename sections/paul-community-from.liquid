@@ -1,7 +1,7 @@
 {%- style -%}
   .paul-community-from-section-{{ section.id }} {
     {%- if section.settings.image_background != blank -%}
-      background: url({{ section.settings.image_background | image_url: width: 2000 }}) center/cover;
+      background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
     {%- endif -%}
   }
 {%- endstyle -%}
