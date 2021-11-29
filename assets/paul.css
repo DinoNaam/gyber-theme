@@ -249,6 +249,59 @@
 }
 
 
+/* Community Banner */
+.paul-community-banner-section{
+  color: #fff;
+  height: 40em;
+  background: #333 center/cover;
+}
+
+.paul-community-banner-section .page-width, .paul-community-banner-section .grid{
+  height: 100%;
+}
+
+.paul-community-banner-section .grid{
+  display: flex;
+}
+
+.paul-community-banner-section .grid__item{
+  height: 100%;
+}
+
+
+.paul-community-banner-section .section-header__title{
+  position: relative;
+  padding-bottom: .5em;
+  margin-bottom: 1.5em;
+}
+.paul-community-banner-section .section-header__title:after{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 8em;
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 2px solid var(--paul-primary);
+}
+
+.paul-community-banner-section .section-content{
+  height: 100%;
+  display: flex;
+  padding: 3em 2em;
+  flex-direction: column;
+  background: rgba(0, 0, 0, .3);
+}
+
+.paul-community-banner-section .section-header__title{
+  margin-top: auto;
+}
+
+.paul-community-banner-section p:last-child{
+  margin-bottom: auto;
+}
+
+
 /* Community About */
 .paul-community-about-section{
   padding: 45px 0;

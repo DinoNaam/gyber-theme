@@ -1,0 +1,102 @@
+{%- style -%}
+  .paul-community-banner-section-{{ section.id }} {
+    {%- if section.settings.image_background != blank -%}
+      background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
+    {%- endif -%}
+  }
+{%- endstyle -%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-community-banner-section paul-community-banner-section-{{ section.id }}">
+  <div class="page-width">
+    <div class="grid grid--uniform">
+      {%- liquid
+        assign isEmpty = true
+        if section.blocks.size > 0
+          assign isEmpty = false
+        endif
+      -%}
+
+      {%- for block in section.blocks -%}
+        {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        <div class="grid__item medium-up--one-third">
+          <div class="section-content">
+            {%- if block.settings.title != blank -%}
+              <h2 class="section-header__title">{{ block.settings.title }}</h2>
+              {%- if block.settings.text != blank -%}
+                <p>{{ block.settings.text }}</p>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if isEmpty -%}
+      <div class="page-width">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="rte">
+              {{ 'home_page.onboarding.no_content' | t }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Community Banner",
+    "max_blocks": 1,
+    "settings": [
+      {
+        "id": "image_background",
+        "type": "image_picker",
+        "label": "Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "Community Banner",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "item"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Welcome To The GYBER Community"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "Here is what our customers say about our products"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
