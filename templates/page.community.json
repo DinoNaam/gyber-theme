@@ -1,0 +1,24 @@
+{
+  "name": "Community Page Template",
+  "wrapper": "div#paul-community-page",
+  "sections": {
+    "banner": {
+      "type": "paul-community-banner"
+    },
+    "about": {
+      "type": "paul-community-about"
+    },
+    "member": {
+      "type": "paul-community-member"
+    },
+    "videos": {
+      "type": "paul-community-video"
+    },
+    "from": {
+      "type": "paul-community-from"
+    }
+  },
+  "order": [
+    "banner", "about", "member", "videos", "from"
+  ]
+}
