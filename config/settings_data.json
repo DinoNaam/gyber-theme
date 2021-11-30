@@ -684,83 +684,6 @@
           "divider": false
         }
       },
-      "1525295772132": {
-        "type": "featured-collection",
-        "settings": {
-          "title": "Featured collection",
-          "home_featured_products": "",
-          "per_row": 4,
-          "rows": 1,
-          "mobile_scrollable": true,
-          "view_all": true,
-          "divider": false
-        }
-      },
-      "1525886124958": {
-        "type": "promo-grid",
-        "blocks": {
-          "1525886482727": {
-            "type": "advanced",
-            "settings": {
-              "subheading": "Limited time",
-              "heading": "Announce your promotion",
-              "textarea": "Include the smaller details of your promotion in text below the title.",
-              "cta_text1": "Shop This",
-              "cta_link1": "shopify:\/\/collections\/all",
-              "cta_text2": "Shop All",
-              "cta_link2": "",
-              "video_url": "",
-              "width": "100",
-              "height": 720,
-              "text_size": 120,
-              "text_align": "vertical-center horizontal-center",
-              "focal_point": "80% 50%",
-              "color_accent": "rgba(0,0,0,0)",
-              "boxed": false,
-              "framed": false
-            }
-          },
-          "1525886854810": {
-            "type": "sale_collection",
-            "settings": {
-              "sale_collection": "",
-              "top_text": "Up to",
-              "middle_text": "50% off",
-              "bottom_text": "Select products",
-              "width": "50",
-              "color_tint": "#000000",
-              "color_tint_opacity": 0,
-              "boxed": false,
-              "framed": true
-            }
-          },
-          "1525911710924": {
-            "type": "sale_collection",
-            "settings": {
-              "sale_collection": "",
-              "top_text": "Up to",
-              "middle_text": "50% off",
-              "bottom_text": "Select products",
-              "width": "50",
-              "color_tint": "#000000",
-              "color_tint_opacity": 0,
-              "boxed": false,
-              "framed": true
-            }
-          }
-        },
-        "block_order": [
-          "1525886482727",
-          "1525886854810",
-          "1525911710924"
-        ],
-        "settings": {
-          "full_width": false,
-          "gutter_size": 20,
-          "space_above": false,
-          "space_below": false
-        }
-      },
       "collection-promotions": {
         "type": "collection-promotions",
         "blocks": {
@@ -1119,8 +1042,6 @@
       "16372071826c7b3c92",
       "163723291745df0397",
       "1637232902e90d9fbe",
-      "1525886124958",
-      "1525295772132",
       "1525115199973",
       "163713800117e7b97b",
       "16373151027f141131"
