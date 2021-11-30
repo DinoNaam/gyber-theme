@@ -1,24 +1,135 @@
 {
-  "name": "Community Page Template",
   "wrapper": "div#paul-community-page",
   "sections": {
     "banner": {
-      "type": "paul-community-banner"
+      "type": "paul-community-banner",
+      "blocks": {
+        "2934e9f9-abc0-40f4-a9b2-8f812e9a2353": {
+          "type": "item",
+          "settings": {
+            "title": "Welcome To The GYBER Community",
+            "text": "Gyber is so grateful for its passionate community and proud to help all those in the community to make fantastic food, enjoy great get-together, and create memories. In the Gyber community, BBQ is more than just a way of cooking food. It’s a lifestyle. Meet the Gyber ambassadors and grillers from across the globe who share their love of all things BBQ."
+          }
+        }
+      },
+      "block_order": [
+        "2934e9f9-abc0-40f4-a9b2-8f812e9a2353"
+      ],
+      "settings": {
+        "image_background": "shopify:\/\/shop_images\/3banner-2.jpg",
+        "divider": false
+      }
     },
     "about": {
-      "type": "paul-community-about"
+      "type": "paul-community-about",
+      "blocks": {
+        "bece89ab-c408-43d5-9da8-fcc6957785f4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "289830ab-c85e-474f-93a7-e4c1cef72109": {
+          "type": "text",
+          "settings": {
+            "author": "Paul",
+            "desc": "Programmer",
+            "content": "<p>The Day the Gyber Pizza Oven and Steak Grill got delivered I was extremely impressed.<\/p><p>The Gyber far exceeded what I thought when I compared them to other brands I have seen or used.<\/p><p>The craftsmanship is amazing, they do not feel light or flimsy, they feel strong and durable.<\/p><p>The handle on the pizza oven is a nice touch for easy transporting, The wave tray is perfectly designed with wood on top and ash on the bottom.<\/p><p>The built in thermometer is a nice touch (Most brands do not have an instant read thermometer.)<\/p><p>We need to have more people have access to Gyber and enjoy all these ovens have to offer.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bece89ab-c408-43d5-9da8-fcc6957785f4",
+        "289830ab-c85e-474f-93a7-e4c1cef72109"
+      ],
+      "settings": {
+        "title": "Meet Our Ambassadors",
+        "text": "Here is what our customers say about our products",
+        "divider": false
+      }
     },
     "member": {
-      "type": "paul-community-member"
+      "type": "paul-community-member",
+      "blocks": {
+        "8126c9d8-b16f-40a4-b495-0124eccfe849": {
+          "type": "item",
+          "settings": {
+            "article": "ambassadors\/ace"
+          }
+        },
+        "96b5c3fa-4319-4bf7-b216-730cd4beeec9": {
+          "type": "item",
+          "settings": {
+            "article": "ambassadors\/rex-burkhead"
+          }
+        },
+        "48d73146-733d-42f7-8824-968d75c4d5a4": {
+          "type": "item",
+          "settings": {
+            "article": "recipe\/ssss"
+          }
+        }
+      },
+      "block_order": [
+        "8126c9d8-b16f-40a4-b495-0124eccfe849",
+        "96b5c3fa-4319-4bf7-b216-730cd4beeec9",
+        "48d73146-733d-42f7-8824-968d75c4d5a4"
+      ],
+      "settings": {
+        "title": "Meet Our Ambassadors",
+        "text": "Here is what our customers say about our products",
+        "divider": false
+      }
     },
     "videos": {
-      "type": "paul-community-video"
+      "type": "paul-community-video",
+      "blocks": {
+        "213d7068-d75f-4d3f-a2f8-a37ceff01855": {
+          "type": "item",
+          "settings": {
+            "article": "ambassadors\/rex-burkhead"
+          }
+        },
+        "0570dd2c-ead3-4c84-915f-2c6f059f101f": {
+          "type": "item",
+          "settings": {
+            "article": "recipe\/test"
+          }
+        },
+        "d180e741-f95e-41c5-ac1b-9c7e2068e47b": {
+          "type": "item",
+          "settings": {
+            "article": "news\/simple-grilled-new-york-strip"
+          }
+        }
+      },
+      "block_order": [
+        "213d7068-d75f-4d3f-a2f8-a37ceff01855",
+        "0570dd2c-ead3-4c84-915f-2c6f059f101f",
+        "d180e741-f95e-41c5-ac1b-9c7e2068e47b"
+      ],
+      "settings": {
+        "title": "Featured Videos",
+        "text": "Here is what our customers say about our products",
+        "divider": false
+      }
     },
     "from": {
-      "type": "paul-community-from"
+      "type": "paul-community-from",
+      "settings": {
+        "title": "From Our Gyber",
+        "text": "Here are some of the culinary masterpieces shared by out GYBER.",
+        "divider": false,
+        "image_background": "shopify:\/\/shop_images\/3_e1051249-336d-4d41-b2b9-2fe8888be44d.jpg",
+        "blog": "ambassadors"
+      }
     }
   },
   "order": [
-    "banner", "about", "member", "videos", "from"
+    "banner",
+    "about",
+    "member",
+    "videos",
+    "from"
   ]
 }
