@@ -33,7 +33,7 @@
     "type_header_base_size": 38,
     "type_header_line_height": 1,
     "type_header_capitalize": true,
-    "type_headers_align_text": true,
+    "type_headers_align_text": false,
     "type_base_font_family": "futura_n4",
     "type_base_spacing": "25",
     "type_base_size": 16,
