@@ -689,13 +689,13 @@
         "blocks": {
           "1526403837307": {
             "type": "banner",
+            "disabled": true,
             "settings": {
               "promo_collection": "",
               "heading": "Banner promotion",
               "text": "Add the details of your promotion in smaller text",
               "link": "shopify:\/\/collections\/all",
               "label": "Shop now",
-              "image": "",
               "color_tint": "#e95454",
               "color_tint_opacity": 10,
               "framed": false
@@ -703,6 +703,7 @@
           },
           "1526496043079": {
             "type": "advanced",
+            "disabled": true,
             "settings": {
               "promo_collection": "",
               "subheading": "Limited time",
@@ -712,7 +713,6 @@
               "cta_link1": "shopify:\/\/collections\/all",
               "cta_text2": "Shop All",
               "cta_link2": "",
-              "image": "",
               "video_url": "",
               "width": "100",
               "height": 500,
@@ -723,11 +723,20 @@
               "boxed": false,
               "framed": true
             }
+          },
+          "acd97fe7-7c8b-4a02-bfbf-2d41397061ff": {
+            "type": "image",
+            "settings": {
+              "promo_collection": "",
+              "link": "",
+              "width": "100"
+            }
           }
         },
         "block_order": [
           "1526403837307",
-          "1526496043079"
+          "1526496043079",
+          "acd97fe7-7c8b-4a02-bfbf-2d41397061ff"
         ],
         "settings": {
           "gutter_size": 20
