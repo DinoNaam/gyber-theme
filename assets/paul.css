@@ -447,7 +447,7 @@
 }
 
 
-/* Product Desc Reset */
+/* ! Product Desc Reset */
 .product-single__description h2{
   padding-left: .5em;
   border-left: 2px solid var(--paul-primary);
@@ -464,4 +464,21 @@
 
 .product-single__description h2 span{
   color: inherit !important;
+}
+
+/* ! Blog Reset */
+@media screen and (min-width: 768px){
+  #shopify-section-blog-template .section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #shopify-section-blog-template  .section-header select{
+    margin: 0;
+  }
+
+  #shopify-section-article-template .section-header{
+    text-align: left;
+  }
 }
