@@ -254,7 +254,7 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "description_style": "default",
+          "description_style": "full",
           "social_enable": true,
           "image_position": "left",
           "image_size": "large",
@@ -388,7 +388,6 @@
               "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
               "button_label": "",
               "button_link": "",
-              "image": "",
               "alignment": "center",
               "color_border": "#f4f4f4",
               "layout": "right",
@@ -403,17 +402,14 @@
               "align_text": "center",
               "round_images": false,
               "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
-              "image_1": "",
               "author_1": "Author's name",
               "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
-              "image_2": "",
               "author_2": "Author's name"
             }
           },
           "1592408474529": {
             "type": "text-and-image",
             "settings": {
-              "image": "",
               "image_width": 500,
               "subtitle": "Improved",
               "title": "Image with text",
@@ -426,7 +422,6 @@
           "1592410318615": {
             "type": "text-and-image",
             "settings": {
-              "image": "",
               "image_width": 500,
               "subtitle": "Improved",
               "title": "Image with text",
@@ -449,7 +444,6 @@
               "link_text_2": "",
               "color_accent": "#ffffff",
               "text_align": "vertical-center horizontal-center",
-              "image": "",
               "focal_point": "center center",
               "section_height": "650px",
               "mobile_height": "auto"
@@ -1040,6 +1034,21 @@
         "settings": {
           "title": "Our Partners",
           "text": "Here is what our customers say about our products"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "You may also like",
+          "related_count": 5
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "show_section": true,
+          "recent_count": 5
         }
       }
     },
