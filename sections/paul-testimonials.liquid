@@ -1,6 +1,6 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="paul-testimonial-section">
+<div class="paul-testimonial-section paul-testimonial-section-{{ section.id }}">
   <div class="section-header">
     <div class="page-width">
       {%- if section.settings.title != blank -%}
@@ -27,11 +27,20 @@
           endif
         -%}
 
-        {%- for block in section.blocks -%}
-          {%- render 'paul-testimonials-item',
-            block: block
-          -%}
-        {%- endfor -%}
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            {%- for block in section.blocks -%}
+              {%- render 'paul-testimonials-item',
+                block: block
+              -%}
+            {%- endfor -%}
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
 
         {%- if isEmpty -%}
           <div class="grid">

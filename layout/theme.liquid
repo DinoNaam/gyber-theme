@@ -29,6 +29,7 @@
   {%- render 'font-face' -%}
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {{ 'paul.css' | asset_url | stylesheet_tag }}
+  {{ 'https://cdn.jsdelivr.net/npm/swiper@7.3.1/swiper-bundle.min.css' | stylesheet_tag }}
   {%- render 'css-variables' -%}
 
   <script>
@@ -76,7 +77,9 @@
     <noscript><link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}"></noscript>
   {%- endif -%}
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@7.3.1/swiper-bundle.min.js" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.paul.js' | asset_url }}" defer="defer"></script>
 
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
