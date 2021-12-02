@@ -5,6 +5,10 @@
   --paul-primary: #ff5d00;
 }
 
+table, table td{
+  background: none;
+}
+
 /* 辅助类 */
 .text-secondly{
   opacity: .6;
@@ -448,6 +452,10 @@
 
 
 /* ! Product Desc Reset */
+.page-content--product tr:nth-child(odd){
+  background: rgba(0, 0, 0, .05);
+}
+
 .product-single__description h2,
 .product-single__description-full h2{
   padding-left: .5em;
