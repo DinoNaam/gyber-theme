@@ -254,6 +254,7 @@
       "product-template": {
         "type": "product-template",
         "settings": {
+          "notice": "<p>1. Delivery in 3-8 business days.<\/p><p>2. Orders containing multiple products will be divided into separate shipments.<\/p>",
           "description_style": "full",
           "social_enable": true,
           "image_position": "left",
