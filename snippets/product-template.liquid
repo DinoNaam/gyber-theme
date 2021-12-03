@@ -277,6 +277,18 @@
               </div>
             {%- endif -%}
 
+            <div class="product-single__icons">
+              <div class="icon-item">
+                <img src="{{ 'icon-truck.svg' | asset_url }}" alt="Truck" /> Free shipping
+              </div>
+              <div class="icon-item">
+                <img src="{{ 'icon-warranty.svg' | asset_url }}" alt="Warranty" /> 1 Year warranty
+              </div>
+              <div class="icon-item">
+                <img src="{{ 'icon-service.svg' | asset_url }}" alt="Service" /> Expert customer service
+              </div>
+            </div>
+
             {%- if notice != blank -%}
               <div class="product-single__notice">
                 {{ notice }}

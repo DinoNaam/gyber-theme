@@ -477,10 +477,28 @@ table, table td{
   color: inherit !important;
 }
 
+/* 附加的三个图标效果 */
+.product-single__icons{
+  gap: 1em;
+  color: #666;
+  display: flex;
+  font-size: .875em;
+  margin-bottom: 1rem;
+}
+.product-single__icons .icon-item{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.product-single__icons .icon-item img{
+  height: 2em;
+  margin-right: .5em;
+}
+
 /* 附加的 Notice 功能 */
 .product-single__notice{
   padding: 1em;
-  background: rgba(0, 0, 0, .05);
+  background: rgba(255, 79, 51, 0.06);
 }
 
 .product-single__notice p:last-child{
