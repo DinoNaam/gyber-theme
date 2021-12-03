@@ -477,6 +477,16 @@ table, table td{
   color: inherit !important;
 }
 
+/* 附加的 Notice 功能 */
+.product-single__notice{
+  padding: 1em;
+  background: rgba(0, 0, 0, .05);
+}
+
+.product-single__notice p:last-child{
+  margin-bottom: 0;
+}
+
 /* ! Blog Reset */
 @media screen and (min-width: 768px){
   #shopify-section-blog-template .section-header{

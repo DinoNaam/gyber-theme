@@ -277,6 +277,12 @@
               </div>
             {%- endif -%}
 
+            {%- if notice != blank -%}
+              <div class="product-single__notice">
+                {{ notice }}
+              </div>
+            {%- endif -%}
+
             {%- unless description_style == 'full' -%}
               <div class="product-single__description rte">
                 {{ product.description }}
