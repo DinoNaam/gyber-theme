@@ -10,6 +10,10 @@ table, table td{
 }
 
 /* 辅助类 */
+.text-primary{
+  color: var(--paul-primary);
+}
+
 .text-secondly{
   opacity: .6;
 }
@@ -216,6 +220,56 @@ table, table td{
 
 .paul-review-item .item-image img{
   width: 6.5em;
+}
+
+
+/* Collection & Products */
+.paul-collection-and-products-section .swiper{
+  --swiper-pagination-bullet-horizontal-gap: 1em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.paul-collection-and-products-section .swiper-wrapper{
+  order: 1;
+}
+
+.paul-collection-and-products-section .swiper-pagination-bullets{
+  bottom: unset !important;
+  position: relative;
+  margin-bottom: 2em;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.paul-collection-and-products-section .swiper-pagination-bullets .swiper-pagination-bullet{
+  width: auto;
+  height: auto;
+  bottom: unset;
+  background: none;
+  border-radius: 0;
+  padding-bottom: .25em;
+}
+
+.paul-collection-and-products-section .swiper-pagination-bullets .swiper-pagination-bullet-active{
+  color: var(--paul-primary);
+  border-bottom: var(--paul-primary) 2px solid;
+}
+
+.paul-collection-and-products-section .item-image{
+  height: 0;
+  position: relative;
+  padding-bottom: 100%;
+  background: center/cover;
+}
+
+.paul-collection-and-products-section .grid__item p{
+  margin-top: .5em;
+}
+
+.paul-collection-and-products-section .grid__item p:last-child{
+  margin-bottom: 0;
 }
 
 
