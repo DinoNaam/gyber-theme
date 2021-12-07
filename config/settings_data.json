@@ -1051,6 +1051,43 @@
           "show_section": true,
           "recent_count": 5
         }
+      },
+      "16388745040e09a01a": {
+        "type": "paul-collections-and-product",
+        "blocks": {
+          "16388745040e09a01a-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "accessories",
+              "title": ""
+            }
+          },
+          "16388745040e09a01a-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "portable-infrared-grills-pizza-ovens-accessories",
+              "title": ""
+            }
+          },
+          "16388745040e09a01a-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "pizza-ovens",
+              "title": ""
+            }
+          }
+        },
+        "block_order": [
+          "16388745040e09a01a-0",
+          "16388745040e09a01a-1",
+          "16388745040e09a01a-2"
+        ],
+        "settings": {
+          "title": "Customed Collection Slide",
+          "text": "What are you waiting for? Get our portable infrared grills and pizza ovens to cook up some mouth watering meals today!",
+          "divider": false,
+          "per_row": 4
+        }
       }
     },
     "content_for_index": [
@@ -1063,7 +1100,8 @@
       "1637232902e90d9fbe",
       "1525115199973",
       "163713800117e7b97b",
-      "16373151027f141131"
+      "16373151027f141131",
+      "16388745040e09a01a"
     ]
   },
   "presets": {
