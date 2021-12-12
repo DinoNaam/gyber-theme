@@ -1939,7 +1939,8 @@ lazySizesConfig.expFactor = 4;
   
     function stickyHeaderHeight() {
       var height = $siteHeader.outerHeight(true);
-      var $stickyHeader = $('.site-header-sticky').css('height', height);
+      // ! Paul Modify: 不要设置高度，因为图片可能会慢导致高度不对
+      // var $stickyHeader = $('.site-header-sticky').css('height', height);
   
       // Also update top position of sticky sidebar
       if ($('.grid__item--sidebar').length) {
