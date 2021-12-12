@@ -1,3 +1,11 @@
+{%- style -%}
+  .paul-testimonial-section-{{ section.id }} .section-header {
+    {%- if section.settings.image_background != blank -%}
+      background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
+    {%- endif -%}
+  }
+{%- endstyle -%}
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="paul-testimonial-section paul-testimonial-section-{{ section.id }}">
@@ -89,6 +97,11 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "id": "image_background",
+        "type": "image_picker",
+        "label": "Background Image"
       }
     ],
     "presets": [{
