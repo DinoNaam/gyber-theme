@@ -2,12 +2,14 @@
 
 <div class="paul-community-about-section">
   <div class="section-header">
-    {%- if section.settings.title != blank -%}
-      <h2 class="section-header__title">{{ section.settings.title }}</h2>
-      {%- if section.settings.text != blank -%}
-        <p>{{ section.settings.text }}</p>
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
       {%- endif -%}
-    {%- endif -%}
+    </div>
   </div>
   <div class="section-content">
     <div class="page-width">

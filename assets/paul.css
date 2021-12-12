@@ -153,6 +153,22 @@ table, table td{
   content: "”";
 }
 
+.paul-testimonial-section small{
+  opacity: .6;
+}
+
+.paul-testimonial-section .swiper{
+  padding-bottom: 2em;
+}
+
+.paul-testimonial-section .swiper-pagination{
+  bottom: 0;
+}
+
+.paul-testimonial-section .swiper-pagination-bullet-active{
+  background-color: var(--paul-primary);
+}
+
 
 /* Reviews */
 .paul-reviews-section{
@@ -409,7 +425,7 @@ table, table td{
   height: 0;
   display: block;
   position: relative;
-  padding-bottom: 60%;
+  padding-bottom: 75%;
   margin-bottom: 1.5em;
 }
 
