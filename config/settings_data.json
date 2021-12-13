@@ -1057,13 +1057,6 @@
       "16388745040e09a01a": {
         "type": "paul-collections-and-product",
         "blocks": {
-          "16388745040e09a01a-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "accessories",
-              "title": ""
-            }
-          },
           "16388745040e09a01a-1": {
             "type": "collection",
             "settings": {
@@ -1077,12 +1070,19 @@
               "collection": "pizza-ovens",
               "title": ""
             }
+          },
+          "16388745040e09a01a-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "accessories",
+              "title": ""
+            }
           }
         },
         "block_order": [
-          "16388745040e09a01a-0",
           "16388745040e09a01a-1",
-          "16388745040e09a01a-2"
+          "16388745040e09a01a-2",
+          "16388745040e09a01a-0"
         ],
         "settings": {
           "title": "Shop Now",
