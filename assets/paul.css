@@ -436,9 +436,11 @@ table, table td{
 }
 
 .paul-community-member-section .member-item img{
+  color: #fff;
   height: 100%;
   object-fit: cover;
   position: absolute;
+  background-color: #333;
 }
 
 .member-item .item-card{
