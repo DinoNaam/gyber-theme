@@ -432,20 +432,16 @@
               "layout": "left"
             }
           },
-          "1592410272428": {
-            "type": "image-hero",
+          "606af115-b7ab-440e-bf37-2ae5425d84ab": {
+            "type": "hero-video",
             "settings": {
-              "parallax": true,
-              "title": "Two line\ntitle image",
-              "title_size": 80,
-              "subheading": "And optional subtext",
-              "link": "",
+              "title": "Bring your\nbrand to life.",
+              "title_size": 49,
+              "subheading": "Seamless hero videos",
               "link_text": "Optional button",
-              "link_2": "",
-              "link_text_2": "",
-              "color_accent": "#ffffff",
-              "text_align": "vertical-center horizontal-center",
-              "focal_point": "center center",
+              "link": "",
+              "text_align": "vertical-center horizontal-right",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=wPcDDjkGTuQ",
               "section_height": "650px",
               "mobile_height": "auto"
             }
@@ -456,7 +452,7 @@
           "1592408476245",
           "1592408474529",
           "1592410318615",
-          "1592410272428"
+          "606af115-b7ab-440e-bf37-2ae5425d84ab"
         ],
         "settings": {
         }
