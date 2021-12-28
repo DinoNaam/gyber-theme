@@ -15,6 +15,7 @@
         "ce64a2cb-d6d5-43b2-81fe-c1b4762063f9"
       ],
       "settings": {
+        "image_background": "shopify:\/\/shop_images\/joe-1920-tiny.jpg",
         "divider": false
       }
     },
@@ -45,10 +46,99 @@
         "text": "",
         "divider": false
       }
+    },
+    "16407066900aad3a53": {
+      "type": "text-columns",
+      "blocks": {
+        "1640706690848425c7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/joe-461-3.png",
+            "image_width_limit": false,
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1640706690848425c7-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/joe-461.png",
+            "image_width_limit": false,
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1640706690848425c7-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/joe-461-2.png",
+            "image_width_limit": false,
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1640706690848425c7-0",
+        "1640706690848425c7-1",
+        "1640706690848425c7-2"
+      ],
+      "settings": {
+        "title": "JOE GRAF JR. WITH Group",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "164070691182e8fffe": {
+      "type": "paul-community-video",
+      "blocks": {
+        "16407069112b78754f-0": {
+          "type": "item",
+          "settings": {
+            "article": "from-our-gyber\/15"
+          }
+        },
+        "16407069112b78754f-1": {
+          "type": "item",
+          "settings": {
+            "article": "from-our-gyber\/13"
+          }
+        },
+        "16407069112b78754f-2": {
+          "type": "item",
+          "settings": {
+            "article": "from-our-gyber\/12"
+          }
+        }
+      },
+      "block_order": [
+        "16407069112b78754f-0",
+        "16407069112b78754f-1",
+        "16407069112b78754f-2"
+      ],
+      "settings": {
+        "title": "Featured Videos",
+        "text": "Here is what our customers say about our products",
+        "divider": false
+      }
     }
   },
   "order": [
     "banner",
-    "about"
+    "about",
+    "16407066900aad3a53",
+    "164070691182e8fffe"
   ]
 }
