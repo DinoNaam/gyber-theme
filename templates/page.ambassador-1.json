@@ -1,13 +1,54 @@
 {
   "sections": {
     "banner": {
-      "type": "paul-community-banner"
+      "type": "paul-community-banner",
+      "blocks": {
+        "ce64a2cb-d6d5-43b2-81fe-c1b4762063f9": {
+          "type": "item",
+          "settings": {
+            "title": "Paul",
+            "text": "A programmer of group"
+          }
+        }
+      },
+      "block_order": [
+        "ce64a2cb-d6d5-43b2-81fe-c1b4762063f9"
+      ],
+      "settings": {
+        "divider": false
+      }
     },
     "about": {
-      "type": "paul-community-about"
+      "type": "paul-community-about",
+      "blocks": {
+        "bacef5f3-5b0e-41ea-be58-c155ba226548": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JOE-tp-1.jpg"
+          }
+        },
+        "2eb414f0-0c9f-4c08-a7b7-5075bbbd7b72": {
+          "type": "text",
+          "settings": {
+            "author": "STORY",
+            "desc": "",
+            "content": "<p>Living in a high-paced lifestyle on the track every week, I thoroughly enjoy my downtime during the week at home with my girlfriend. Over the years, we have grilled a lot but never could enjoy the sensation of true backyard barbecue until we received our group.<\/p><p>The difference has been in the taste.<\/p><p>Not only have we found eight ways to enjoy our food with a group but utilizing a pellet grill has taken our grilling experience to the next level. Whether it’s grilling chicken, barbecuing ribs, or smoking a turkey, our choices now seem endless thanks to group.<\/p><p>I have found that pellet grills are the easiest grills to use, by far and have immense versatility. Pellet grills constantly monitor temperature which gives me the confidence to know that our food is going to be perfect every time.<\/p><p>Thanks to group, I’m also able to choose from a variety of wood-smoked flavors such as oak, apple, pecan, cherry, mesquite and so much more to give our food that extra kick!<\/p><p>I am proud to be a group ambassador and it’s my goal, especially as we transition into summer to share my experiences with group whether it's connecting with race fans in the infield or my next-door neighbor and sharing the benefits of what a pellet grill can do for you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bacef5f3-5b0e-41ea-be58-c155ba226548",
+        "2eb414f0-0c9f-4c08-a7b7-5075bbbd7b72"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "divider": false
+      }
     }
   },
   "order": [
-    "banner", "about"
+    "banner",
+    "about"
   ]
 }
