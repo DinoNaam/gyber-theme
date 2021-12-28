@@ -133,12 +133,58 @@
         "text": "",
         "divider": false
       }
+    },
+    "164070947514ce23d5": {
+      "type": "paul-featured-products",
+      "blocks": {
+        "16407094752a722727-0": {
+          "type": "product",
+          "settings": {
+            "product": "11-inch-pizza-stone",
+            "title": ""
+          }
+        },
+        "16407094752a722727-1": {
+          "type": "product",
+          "settings": {
+            "product": "gyber-chef-apron",
+            "title": ""
+          }
+        },
+        "16407094752a722727-2": {
+          "type": "product",
+          "settings": {
+            "product": "fremont-wood-fired-pizza-oven",
+            "title": ""
+          }
+        },
+        "7d0c6e03-989a-49f2-8b74-e03d388df1ba": {
+          "type": "product",
+          "settings": {
+            "product": "gyber-bbq-tool-set",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "16407094752a722727-0",
+        "16407094752a722727-1",
+        "16407094752a722727-2",
+        "7d0c6e03-989a-49f2-8b74-e03d388df1ba"
+      ],
+      "settings": {
+        "title": "Customed Featured Products",
+        "text": "What are you waiting for? Get our portable infrared grills and pizza ovens to cook up some mouth watering meals today!",
+        "divider": false,
+        "per_row": 4
+      }
     }
   },
   "order": [
     "banner",
     "about",
     "16407066900aad3a53",
-    "164070691182e8fffe"
+    "164070691182e8fffe",
+    "164070947514ce23d5"
   ]
 }
