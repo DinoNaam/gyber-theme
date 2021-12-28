@@ -1,0 +1,135 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{% comment %}
+  Todo: 未来需要改掉 paul-collection-and-products-section 这个类名
+{% endcomment %}
+<div class="paul-collection-and-products-section paul-collection-and-products-section-{{ section.id }}">
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <div class="page-width">
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="section-content">
+    <div class="page-width">
+      {%- liquid
+        assign isEmpty = true
+        if section.blocks.size > 0
+          assign isEmpty = false
+        endif
+      -%}
+
+      {%- if isEmpty -%}
+        <div class="grid grid--uniform">
+          <div class="grid__item">
+            <div class="rte">
+              {{ 'home_page.onboarding.no_content' | t }}
+            </div>
+          </div>
+        </div>
+      {%- else -%}
+        <div class="grid grid--uniform" data-name="{{ title_output }}">
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign product = block.settings.product
+
+              case section.settings.per_row
+                when 2
+                  assign grid_item_width = 'medium-up--one-half'
+                when 3
+                  assign grid_item_width = 'small--one-half medium-up--one-third'
+                when 4
+                  assign grid_item_width = 'small--one-half medium-up--one-quarter'
+              endcase
+            -%}
+
+            {%- render 'paul-featured-product-item',
+              product: product,
+              block: block,
+              grid_item_width: grid_item_width,
+              per_row: section.settings.per_row
+            -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Customed Feat Products",
+    "class": "index-section",
+    "max_blocks": 15,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Customed Featured Products"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "What are you waiting for? Get our portable infrared grills and pizza ovens to cook up some mouth watering meals today!"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Products per row",
+        "default": 4,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "presets": [{
+      "name": "Customed Feat Products",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "id": "product",
+            "type": "product",
+            "label": "Product"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "info": "Replaces the Product\'s title"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

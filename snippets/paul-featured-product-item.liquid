@@ -1,0 +1,56 @@
+{%- liquid
+  unless grid_item_width
+    assign grid_item_width = 'small--one-half medium-up--one-third'
+  endunless
+
+  unless background_position
+    assign background_position = 'center center'
+  endunless
+
+  if block.settings.title != blank
+    assign title_output = block.settings.title
+  else
+    if product.empty?
+      assign title_output = 'home_page.onboarding.product_title' | t
+    else
+      assign title_output = product.title | escape
+    endif
+  endif
+-%}
+
+
+{%- if product == blank -%}
+  {%- capture placeholder -%}collection-{% cycle 1,2,3,4,5,6 %}{%- endcapture -%}
+  <div class="grid__item {{ grid_item_width }}">
+    <div class="item-image collection-image--placeholder">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
+    <p>No Product</p>
+  </div>
+{%- else -%}
+  <div class="grid__item {{ grid_item_width }}">
+    <a href="{{ product.url }}" data-aos="row-of-{{ per_row }}">
+      {%- liquid
+          assign product_image = product | image_url: width: 600
+      -%}
+
+      {%- if product == blank -%}
+        {%- capture placeholder -%}collection-{% cycle 1,2,3,4,5,6 %}{%- endcapture -%}
+        <div class="item-image collection-image--placeholder">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
+      {%- else -%}
+        <div
+          class="item-image lazyload"
+          data-bgset="{% render 'bgset', image: product_image %}"
+          data-sizes="auto"
+          style="background-position: {{ background_position }};">
+        </div>
+        <noscript>
+          <div
+            class="item-image"
+            style="background-image: url({{ product_image | img_url: '400x' }});">
+          </div>
+        </noscript>
+      {%- endif -%}
+      <p>{{ title_output }}</p>
+      <p class="text-primary">{{ product.price | money }}</p>
+    </a>
+  </div>
+{%- endif -%}
