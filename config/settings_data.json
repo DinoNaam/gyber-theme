@@ -381,6 +381,20 @@
       "product-story-sections": {
         "type": "product-story-sections",
         "blocks": {
+          "606af115-b7ab-440e-bf37-2ae5425d84ab": {
+            "type": "hero-video",
+            "settings": {
+              "title": "",
+              "title_size": 49,
+              "subheading": "",
+              "link_text": "",
+              "link": "",
+              "text_align": "vertical-center horizontal-right",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=SGDgXzBUg6M",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
           "1592410313636": {
             "type": "background-image-text",
             "settings": {
@@ -396,25 +410,14 @@
               "parallax": true
             }
           },
-          "1592408476245": {
-            "type": "testimonials",
-            "settings": {
-              "title": "Testimonials",
-              "align_text": "center",
-              "round_images": false,
-              "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
-              "author_1": "Author's name",
-              "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
-              "author_2": "Author's name"
-            }
-          },
           "1592408474529": {
             "type": "text-and-image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/shutterstock_551753902_copy.jpg",
               "image_width": 500,
-              "subtitle": "Improved",
-              "title": "Image with text",
-              "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+              "subtitle": "",
+              "title": "WOOD FIRED TASTE",
+              "text": "<p>Fremont can be filled with falvored pellets or wood chips to create a rich smoky flavor pizza.<\/p>",
               "button_label": "Optional button",
               "button_link": "",
               "layout": "right"
@@ -423,36 +426,36 @@
           "1592410318615": {
             "type": "text-and-image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/shutterstock_1834034011_2.jpg",
               "image_width": 500,
-              "subtitle": "Improved",
-              "title": "Image with text",
-              "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+              "subtitle": "",
+              "title": "HEAVY DUTY STAINLESS STEEL",
+              "text": "<p>Made of high quality food grade stainless steel, provides long-lasting durability and great heat retention.<\/p>",
               "button_label": "Optional button",
               "button_link": "",
               "layout": "left"
             }
           },
-          "606af115-b7ab-440e-bf37-2ae5425d84ab": {
-            "type": "hero-video",
+          "dd21ebdd-e2f1-4aa6-8ed9-640c40daa0ec": {
+            "type": "text-and-image",
             "settings": {
-              "title": "Bring your\nbrand to life.",
-              "title_size": 49,
-              "subheading": "Seamless hero videos",
-              "link_text": "Optional button",
-              "link": "",
-              "text_align": "vertical-center horizontal-right",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=wPcDDjkGTuQ",
-              "section_height": "650px",
-              "mobile_height": "auto"
+              "image": "shopify:\/\/shop_images\/shutterstock_1199267023_copy.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "MULTIPURPOSE COOKER",
+              "text": "<p>Along with this pizza oven, you can enjoy more cooking recipes to make pizza, steak, lobster, lamb chops and so much more by buying our extra BBQ accessories.<\/p>",
+              "button_label": "Optional button",
+              "button_link": "",
+              "layout": "right"
             }
           }
         },
         "block_order": [
+          "606af115-b7ab-440e-bf37-2ae5425d84ab",
           "1592410313636",
-          "1592408476245",
           "1592408474529",
           "1592410318615",
-          "606af115-b7ab-440e-bf37-2ae5425d84ab"
+          "dd21ebdd-e2f1-4aa6-8ed9-640c40daa0ec"
         ],
         "settings": {
         }
