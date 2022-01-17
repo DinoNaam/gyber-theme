@@ -79,7 +79,7 @@
     "product_contact_title": "Ask a question",
     "product_contact_show_phone": false,
     "enable_product_reviews": true,
-    "reviews_layout": "expandable",
+    "reviews_layout": "full",
     "collection_grid_style": "overlaid-box",
     "collection_grid_shape": "square",
     "collection_grid_image": "collection",
@@ -103,7 +103,7 @@
     "social_linkedin_link": "",
     "social_youtube_link": "https:\/\/www.youtube.com\/watch?v=ce32Mpv412M",
     "social_vimeo_link": "",
-    "share_facebook": false,
+    "share_facebook": true,
     "share_twitter": false,
     "share_pinterest": false,
     "favicon": "",
@@ -629,9 +629,9 @@
       "collection-header": {
         "type": "collection-header",
         "settings": {
-          "enable": true,
-          "collection_image_enable": true,
-          "parallax": true
+          "enable": false,
+          "collection_image_enable": false,
+          "parallax": false
         }
       },
       "collection-sidebar": {
@@ -723,6 +723,7 @@
             "type": "image",
             "settings": {
               "promo_collection": "",
+              "image": "shopify:\/\/shop_images\/banner.png",
               "link": "",
               "width": "100"
             }
