@@ -1,0 +1,21 @@
+{
+  "name": "Support Page Template",
+  "wrapper": "div#paul-support-page",
+  "sections": {
+    "banner": {
+      "type": "paul-faq-banner"
+    },
+    "list": {
+      "type": "paul-faq-list"
+    },
+    "links": {
+      "type": "paul-faq-links"
+    },
+    "card": {
+      "type": "paul-faq-card"
+    }
+  },
+  "order": [
+    "banner", "list", "links", "card"
+  ]
+}
