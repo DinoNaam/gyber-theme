@@ -19,7 +19,6 @@
       -%}
 
       {%- for block in section.blocks -%}
-        {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         <div class="grid__item medium-up--one-third">
           <div class="section-content">
             {%- if block.settings.title != blank -%}
