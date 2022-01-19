@@ -87,19 +87,25 @@
         "213d7068-d75f-4d3f-a2f8-a37ceff01855": {
           "type": "item",
           "settings": {
-            "article": "video\/smoked-flank-steak"
+            "article": "video\/smoked-flank-steak",
+            "title": "Wood fired lobsters tails recipe",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ce32Mpv412M"
           }
         },
         "0570dd2c-ead3-4c84-915f-2c6f059f101f": {
           "type": "item",
           "settings": {
-            "article": "video\/simple-grilled-new-york-strip"
+            "article": "video\/simple-grilled-new-york-strip",
+            "title": "Wood fired pizza recipe",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=pf58EnBNwww"
           }
         },
         "d180e741-f95e-41c5-ac1b-9c7e2068e47b": {
           "type": "item",
           "settings": {
-            "article": "video\/baked-sausage-bread"
+            "article": "video\/baked-sausage-bread",
+            "title": "Sweet buffalo wood fired chicken wings",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=nelDAs_J8AA"
           }
         }
       },
