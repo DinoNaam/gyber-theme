@@ -33,28 +33,29 @@
           </div>
         {%- else -%}
           {%- for block in section.blocks -%}
-            {%- if block.settings.article != blank -%}
-              {%- assign img_url = block.settings.article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-              <div class="grid__item medium-up--one-third">
-                <a class="video-item" href="{{ block.settings.article.url }}">
-                  <img class="lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 720, 900, 1080]"
-                    data-aspectratio="{{ block.settings.article.image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ block.settings.article.image.alt }}"
-                  />
-                  {%- liquid
-                    if block.settings.article.title != blank
-                      assign title_output = block.settings.article.title
-                    else
-                      assign title_output = 'No Title'
-                    endif
-                  -%}
-                </a>
-                <p class="text-ellipsis text-stripe-bottom">{{ title_output }}</p>
+            <div class="grid__item medium-up--one-third">
+              <div class="video-item">
+                {%- if block.settings.video_url == blank -%}
+                  <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                {%- else -%}
+                  {%- if block.settings.video_url.type == "youtube" -%}
+                    <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                  {%- endif -%}
+                  {{ block.settings.video_url.alt }}
+                  {%- if block.settings.video_url.type == "vimeo" -%}
+                    <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                  {%- endif -%}
+                {%- endif -%}
+                {%- liquid
+                  if block.settings.title != blank
+                    assign title_output = block.settings.title
+                  else
+                    assign title_output = 'No Title'
+                  endif
+                -%}
               </div>
-            {%- endif -%}
+              <p class="text-ellipsis text-stripe-bottom">{{ title_output }}</p>
+            </div>
           {%- endfor -%}
         {%- endif -%}
       </div>
@@ -115,6 +116,17 @@
             "id": "article",
             "type": "article",
             "label": "Blog Article"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "video_url",
+            "id": "video_url",
+            "label": "Video link",
+            "accept": ["youtube", "vimeo"]
           }
         ]
       }
