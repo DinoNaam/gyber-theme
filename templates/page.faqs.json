@@ -5,8 +5,35 @@
       "type": "paul-faq-banner",
       "settings": {
         "image_background": "shopify:\/\/shop_images\/3banner.jpg",
-        "title": "GYBER SUPPORT CENTER",
-        "text": "Product information, assembly support, FAQS, user guides - everything in one place.",
+        "title": "FREQUENTLY ASK QUESTIONS ABOUT GYBER",
+        "text": "",
+        "size": true,
+        "divider": false
+      }
+    },
+    "164266496575276321": {
+      "type": "paul-faq-intro-card",
+      "blocks": {
+        "1642664965fef5938d-1": {
+          "type": "text",
+          "settings": {
+            "title": "Gyber Basics",
+            "desc": "Got a new Gyber? Start here to learn the basics",
+            "content": "<p><a href=\"\/blogs\/news\" title=\"News\">How to Season & Burn In Your Grill<\/a><\/p><p><a href=\"\/blogs\/recipe\/wood-fired-lobster\" title=\"WOOD FIRED LOBSTER\">How to Choose the Right Size<\/a><\/p><p><a href=\"\/blogs\/news\" title=\"News\">How to Season & Burn In Your Grill<\/a><\/p><p><a href=\"\/blogs\/recipe\/wood-fired-lobster\" title=\"WOOD FIRED LOBSTER\">How to Choose the Right Size<\/a><\/p><p><a href=\"\/blogs\/news\" title=\"News\">How to Season & Burn In Your Grill<\/a><\/p><p><a href=\"\/blogs\/recipe\/wood-fired-lobster\" title=\"WOOD FIRED LOBSTER\">How to Choose the Right Size<\/a><\/p>"
+          }
+        },
+        "1642664965fef5938d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11111.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1642664965fef5938d-1",
+        "1642664965fef5938d-0"
+      ],
+      "settings": {
         "divider": false
       }
     },
@@ -26,11 +53,27 @@
             "title": "Pre-Sales Questions",
             "blog": "news"
           }
+        },
+        "0b3093b7-8a57-4d48-a3e6-3f2b1f590970": {
+          "type": "item",
+          "settings": {
+            "title": "Pre-Sales Questions",
+            "blog": ""
+          }
+        },
+        "97977cc1-ce34-4635-944f-e887d7678307": {
+          "type": "item",
+          "settings": {
+            "title": "Pre-Sales Questions",
+            "blog": ""
+          }
         }
       },
       "block_order": [
         "4d74d741-8672-41f5-8479-2110b335036b",
-        "b7d24d0d-108f-440a-a469-b58b617663f2"
+        "b7d24d0d-108f-440a-a469-b58b617663f2",
+        "0b3093b7-8a57-4d48-a3e6-3f2b1f590970",
+        "97977cc1-ce34-4635-944f-e887d7678307"
       ],
       "settings": {
         "title": "",
@@ -38,95 +81,50 @@
         "divider": false
       }
     },
-    "links": {
-      "type": "paul-faq-links",
+    "1642665138a6c0cdef": {
+      "type": "paul-faq-icon-text",
       "blocks": {
-        "736c1a89-73c8-4bbd-aeea-e2bf79629aeb": {
+        "1642665138fc9a2029-0": {
           "type": "item",
           "settings": {
-            "icon": "<svg id=\"_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 300 300\"><style><\/style>\n<path d=\"M254.1 90.2L174.3 9.6c-1.3-1.3-2.7-2.4-4.2-3.3-.4-.2-.8-.5-1.2-.7-.3-.1-.5-.3-.8-.4-2.6-1.2-5.4-1.8-8.3-1.8H60.6c-11.4 0-21 9.3-21 20.7V277c0 11.4 9.5 20.7 21 20.7h179c11.4 0 20.4-9.3 20.4-20.7V104.8c0-5.5-2-10.7-5.9-14.6zm-83.8-55L228 93.1h-57.7V35.2zm69 241.8h-179V24.2h89.4v69c0 11.4 9.5 20.7 21 20.7h68.7V277zm-89.9-110.7c0-7.2-5-10.9-11.7-10.9-6.7 0-11.3 3.4-16.4 8.4l-15.9-14.6c8.9-10.2 21.2-17 35.8-17 20.1 0 35.8 9.6 35.8 32.1s-27.7 29.2-25.6 50.6h-25.1c-3.8-24.9 23.1-35.3 23.1-48.6zM127 243c0-6.9 4.9-12.4 11.9-12.4 6.9 0 11.9 5.5 11.9 12.4 0 7-5.1 12.5-11.9 12.5-6.9 0-11.9-5.5-11.9-12.5zm0 0\"><\/path><\/svg>",
-            "title": "FAQS",
-            "desc": "Get instant answers to the most common questions.",
-            "link": ""
+            "icon": "<svg viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"1464\"><path d=\"M507.904 60.416q93.184-1.024 175.104 33.792t143.872 94.72 97.792 141.312 36.864 174.592q1.024 88.064-30.208 165.888t-87.04 137.728-131.072 98.816-162.304 48.128q-22.528 3.072-48.128 5.12t-56.832 3.072-69.632 0-86.528-6.144q-106.496-10.24-158.208-26.624t-41.472-18.432q54.272-9.216 93.184-29.696 20.48-11.264 16.896-32.256t-19.968-39.424q-52.224-57.344-84.48-133.632t-34.304-164.352q-1.024-93.184 33.792-175.104t95.232-143.36 142.336-97.28 175.104-36.864zM707.584 510.976q0 26.624 18.432 45.568t45.056 18.944 45.568-18.944 18.944-45.568-18.944-45.056-45.568-18.432-45.056 18.432-18.432 45.056zM450.56 510.976q0 26.624 19.456 46.08t46.08 19.456q27.648 0 46.592-19.456t18.944-46.08q0-27.648-18.944-46.592t-46.592-18.944q-26.624 0-46.08 18.944t-19.456 46.592zM196.608 509.952q0 26.624 18.944 46.08t45.568 19.456q27.648 0 46.592-19.456t18.944-46.08-18.944-45.568-46.592-18.944q-26.624 0-45.568 18.944t-18.944 45.568z\" p-id=\"1465\"><\/path><\/svg>",
+            "title": "Chat US",
+            "desc": "<p><a href=\"\/pages\/test\" title=\"About US\">Live Chat Now<\/a><\/p><p>Talk to a real human who really cares and get instant answers to your questions.<\/p>"
           }
         },
-        "8b537cdf-df4b-466b-acb8-8bfc6e288a7c": {
+        "1642665138fc9a2029-1": {
           "type": "item",
           "settings": {
-            "icon": "<svg id=\"_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 300 300\"><style><\/style>\n<path d=\"M275.3 14.9h-79.7c-17.9 0-34.8 8.4-45.5 22.7-10.8-14.3-27.6-22.7-45.5-22.7H24.8C12.2 14.9 2 25 2 37.5v209.2c0 12.5 10.2 22.6 22.8 22.6h83.7c11.1 10.9 26 17 41.6 17 15.5 0 30.4-6.1 41.6-17h83.7c12.6 0 22.8-10.1 22.8-22.6V37.5c-.1-12.4-10.3-22.6-22.9-22.6zm0 231.8h-88.6c-3.3 0-6.5 1.4-8.6 3.9-7.2 8.3-17.3 13-28 13s-20.9-4.7-28-13c-2.2-2.5-5.3-3.9-8.7-3.9H24.8V37.5h79.7c18.8 0 34.2 15.2 34.2 33.9v96.2c0 6.2 5.1 11.3 11.4 11.3 3 0 5.9-1.2 8-3.3 2.1-2.1 3.3-5 3.4-8V71.4c0-18.7 15.3-33.9 34.1-33.9h79.7v209.2zm0 0\"><\/path><\/svg>",
-            "title": "LEARNING CENTER",
-            "desc": "Learn how to get the most out of your GYBER.",
-            "link": ""
+            "icon": "",
+            "title": "Title",
+            "desc": "<p>Description<\/p>"
           }
         },
-        "0541dee3-6ec8-46a3-8586-ba21c4285a94": {
+        "1642665138fc9a2029-2": {
           "type": "item",
           "settings": {
-            "icon": "<svg id=\"_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 300 300\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><path id=\"SVGID_1_\" d=\"M2.9 46.7h294.2v220.9H2.9z\"><\/path><\/defs><path class=\"st0\" d=\"M58 56c0-5.1 4.1-9.2 9.2-9.2s9.2 4.1 9.2 9.2v202.1c0 5.1-4.1 9.2-9.2 9.2s-9.2-4.1-9.2-9.2V56zm64.3 73.3c0-5 3.5-7.2 8.1-5l49.1 24.6c9 4.6 8.8 11.9 0 16.4l-7.2 3.7-41.7 20.8c-4.6 2.2-8.3 0-8.3-5v-55.5zm0 0\"><\/path><path class=\"st0\" d=\"M2.9 129.5c0-2.4.9-4.8 2.6-6.5 1.7-1.7 4-2.7 6.4-2.7H67c2.5 0 4.9.9 6.6 2.6 1.8 1.7 2.8 4.1 2.8 6.6 0 2.4-.9 4.8-2.6 6.5-1.7 1.7-4 2.7-6.4 2.7H12.3c-2.5 0-4.9-.9-6.6-2.6-1.8-1.7-2.8-4.1-2.8-6.6zm0 55.2c0-2.4.9-4.8 2.6-6.5 1.7-1.7 4-2.7 6.4-2.7H67c2.5 0 4.9.9 6.6 2.6 1.8 1.7 2.8 4.1 2.8 6.6 0 2.4-.9 4.8-2.6 6.5-1.7 1.7-4 2.7-6.4 2.7H12.3c-2.5 0-4.9-.9-6.6-2.6-1.8-1.8-2.8-4.2-2.8-6.6zm220.5-55.2c0-2.4.9-4.8 2.6-6.5 1.7-1.7 4-2.7 6.4-2.7h55.1c5 .1 9 4.2 9 9.2 0 2.4-.9 4.8-2.6 6.5-1.7 1.7-4 2.7-6.4 2.7h-55.1c-5-.1-9-4.2-9-9.2zm0 55.2c0-2.4.9-4.8 2.6-6.5 1.7-1.7 4-2.7 6.4-2.7h55.1c5 .1 9 4.2 9 9.2 0 2.4-.9 4.8-2.6 6.5-1.7 1.7-4 2.7-6.4 2.7h-55.1c-5-.1-9-4.2-9-9.2zm0 0\"><\/path><path d=\"M223.4 56c0-5.1 4.1-9.2 9.2-9.2s9.2 4.1 9.2 9.2v202.1c0 5.1-4.1 9.2-9.2 9.2s-9.2-4.1-9.2-9.2V56zm0 0\"><\/path><path d=\"M274.9 46.8h-250c-5.8 0-11.4 2.2-15.6 6.3-4.1 4.1-6.5 9.7-6.5 15.5v176.6c.1 12.1 9.9 22 22.1 22.1h249.9c5.8 0 11.4-2.2 15.6-6.3 4.1-4.1 6.5-9.7 6.5-15.5V68.7c-.2-12.1-10-21.8-22-21.9zm3.6 187.5c0 8-6.5 14.6-14.5 14.7H35.8c-8-.1-14.5-6.7-14.5-14.7V79.9c0-8 6.5-14.6 14.5-14.7H264c8 .1 14.5 6.7 14.5 14.7v154.4zm0 0\"><\/path><\/svg>",
-            "title": "ASSEMBLY SUPPORT",
-            "desc": "All our assembly manuals and videos are available here.",
-            "link": ""
-          }
-        },
-        "9a138b86-4870-4c14-a550-843ef19ee0c5": {
-          "type": "item",
-          "settings": {
-            "icon": "<svg id=\"_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 300 300\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><path id=\"SVGID_3_\" d=\"M1.8 5.5h296.6v290.6H1.8z\"><\/path><\/defs><path d=\"M110 270c-24.5-3.9-43.8-25.8-43.8-51.5V111.6c0-42.5 30.9-79.9 72.1-85 51.5-7.7 95.3 32.2 95.3 82.5v95.3H253v-91.5C253 57.5 211.8 9.8 156.4 6 97.1 2 46.8 49.7 46.8 109v109.5c0 34.8 25.8 64.4 59.3 69.6 6.4 1.3 11.6-3.9 11.6-9 0-5.2-3.9-9.1-7.7-9.1zm0 0\"><\/path><path class=\"st0\" d=\"M46.8 141.2H27.5c-3.9 0-6.4 2.6-6.4 6.4v38.7c0 3.9 2.6 6.4 6.4 6.4h19.3v-51.5zm-19.3-19.3h38.7V212H27.5c-14.2 0-25.8-11.6-25.8-25.8v-38.7c0-14 11.6-25.6 25.8-25.6zM253 141.2h19.3c3.9 0 6.4 2.6 6.4 6.4v38.7c0 3.9-2.6 6.4-6.4 6.4H253v-51.5zm19.3-19.3h-38.7V212h38.7c14.2 0 25.8-11.6 25.8-25.8v-38.7c0-14-11.6-25.6-25.8-25.6zm0 0\"><\/path><path d=\"M143.5 270h12.9c7.7 0 12.9 5.2 12.9 12.9s-5.2 12.9-12.9 12.9h-12.9c-7.7 0-12.9-5.2-12.9-12.9s5.1-12.9 12.9-12.9zm0 0\"><\/path><\/svg>",
-            "title": "CONTACT US",
-            "desc": "Have other questions? Let us help you.",
-            "link": ""
+            "icon": "",
+            "title": "Title",
+            "desc": "<p>Description<\/p>"
           }
         }
       },
       "block_order": [
-        "736c1a89-73c8-4bbd-aeea-e2bf79629aeb",
-        "8b537cdf-df4b-466b-acb8-8bfc6e288a7c",
-        "0541dee3-6ec8-46a3-8586-ba21c4285a94",
-        "9a138b86-4870-4c14-a550-843ef19ee0c5"
-      ],
-      "settings": {
-        "title": "NEED MORE HELP?",
-        "text": "",
-        "divider": false
-      }
-    },
-    "card": {
-      "type": "paul-faq-card",
-      "blocks": {
-        "6f25ade8-a9a4-4f88-8487-29c5e76bb9ac": {
-          "type": "item",
-          "settings": {
-            "title": "Community",
-            "desc": "Ask questions, find answers, and connect with our community of grill masters, food enthusiasts, and lovers of outdoor cooking.",
-            "link": "",
-            "image": "shopify:\/\/shop_images\/34-1.png"
-          }
-        },
-        "fc7f3794-a4d3-4b60-9787-d2ff35356afb": {
-          "type": "item",
-          "settings": {
-            "title": "AMBASSADORS",
-            "desc": "Meet some of our brand ambassadors. They are passionate about BBQ and they love doing that with their GYBER pellet grills.",
-            "link": "",
-            "image": "shopify:\/\/shop_images\/34-2.png"
-          }
-        }
-      },
-      "block_order": [
-        "6f25ade8-a9a4-4f88-8487-29c5e76bb9ac",
-        "fc7f3794-a4d3-4b60-9787-d2ff35356afb"
+        "1642665138fc9a2029-0",
+        "1642665138fc9a2029-1",
+        "1642665138fc9a2029-2"
       ],
       "settings": {
         "title": "",
-        "text": "",
-        "divider": false
+        "divider": false,
+        "per_row": 3
       }
     }
   },
   "order": [
     "banner",
+    "164266496575276321",
     "list",
-    "links",
-    "card"
+    "1642665138a6c0cdef"
   ]
 }
