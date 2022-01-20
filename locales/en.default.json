@@ -158,6 +158,7 @@
     "form": {
       "name": "Name",
       "email": "Email",
+      "order": "Order",
       "phone": "Phone number",
       "message": "Message",
       "send": "Send",
