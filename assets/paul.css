@@ -686,6 +686,10 @@ table, table td{
 }
 
 /* FAQ Intro Card */
+.paul-faq-intro-card-section{
+  padding: 4em 0;
+}
+
 .paul-faq-intro-card-section .wrapper{
   overflow: hidden;
   border-radius: .5em;
@@ -720,13 +724,20 @@ table, table td{
 }
 
 /* FAQ Icon & Text */
+.paul-faq-icon-text-section .grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .paul-faq-icon-text-section, .paul-icon-text-item{
+  height: 100%;
   padding: 1em;
   border-radius: .5em;
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
 .paul-faq-icon-text-section, .paul-icon-text-item svg{
+  width: 3em;
   fill: var(--paul-primary);
   margin-bottom: .5em;
 }

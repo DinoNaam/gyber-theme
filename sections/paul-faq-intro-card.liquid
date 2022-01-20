@@ -2,7 +2,7 @@
 
 <div class="page-width">
   <div class="wrapper">
-    <div class="grid grid--uniform grid--flush-bottom">
+    <div class="grid grid--uniform">
       {%- liquid
         assign isEmpty = true
         if section.blocks.size > 0
@@ -21,25 +21,25 @@
           {%- if block.type == 'image' -%}
             {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <div class="grid__item medium-up--one-half">
-              <p>
-                <img class="lazyload"
-                  data-src="{{ img_url }}"
-                  data-widths="[180, 360, 540, 720, 900, 1080]"
-                  data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-                  data-sizes="auto"
-                  alt="{{ block.settings.image.alt }}"
-                />
-              </p>
+              <img class="lazyload"
+                data-src="{{ img_url }}"
+                data-widths="[180, 360, 540, 720, 900, 1080]"
+                data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ block.settings.image.alt }}"
+              />
             </div>
           {%- else if block.type == 'text' -%}
-            <div class="grid__item medium-up--one-half item-text">
-              <header>
-                <h3>{{ block.settings.title }}</h3>
-                <p class="text-secondly"><small>{{ block.settings.desc }}</small></p>
-              </header>
-              <article>
-                {{ block.settings.content }}
-              </article>
+            <div class="grid__item medium-up--one-half">
+              <div class="item-text">
+                <header>
+                  <h3>{{ block.settings.title }}</h3>
+                  <p class="text-secondly"><small>{{ block.settings.desc }}</small></p>
+                </header>
+                <article>
+                  {{ block.settings.content }}
+                </article>
+              </div>
             </div>
           {%- endif -%}
         {%- endfor -%}
