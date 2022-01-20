@@ -47,6 +47,11 @@
               <input type="tel" id="ContactFormPhone-{{ blockId }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
             {%- endif -%}
 
+            {%- if block.settings.show_order_number -%}
+              <label for="ContactFormOrder-{{ section.id }}">{{ 'contact.form.order' | t }}</label>
+              <input id="ContactFormOrder-{{ section.id }}" class="input-full" name="contact[order]" pattern="[0-9\-]*" value="{% if form.order %}{{ form.order }}{% endif %}">
+            {%- endif -%}
+
             <label for="ContactFormMessage-{{ blockId }}">{{ 'contact.form.message' | t }}</label>
             <textarea rows="5" id="ContactFormMessage-{{ blockId }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 
