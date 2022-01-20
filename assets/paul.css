@@ -724,22 +724,40 @@ table, table td{
 }
 
 /* FAQ Icon & Text */
+.paul-faq-icon-text-section{
+  padding: 4em 0;
+}
+
 .paul-faq-icon-text-section .grid{
   display: flex;
   flex-wrap: wrap;
 }
 
-.paul-faq-icon-text-section, .paul-icon-text-item{
+.paul-faq-icon-text-section .paul-icon-text-item{
   height: 100%;
   padding: 1em;
   border-radius: .5em;
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
-.paul-faq-icon-text-section, .paul-icon-text-item svg{
+.paul-faq-icon-text-section .paul-icon-text-item svg{
   width: 3em;
   fill: var(--paul-primary);
   margin-bottom: .5em;
+}
+
+/* ! FAQ Reset */
+#paul-faq-page .paul-faq-list-section .grid--flush-bottom{
+  margin-bottom: -3em;
+}
+
+#paul-faq-page .paul-faq-list-section .grid--flush-bottom > .grid__item{
+  margin-bottom: 3em;
+}
+
+#paul-faq-page .paul-faq-list-section .faq-list header{
+  color: #222;
+  background-color: #ddd;
 }
 
 /* ! Product Desc Reset */
