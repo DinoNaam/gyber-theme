@@ -516,10 +516,11 @@ table, table td{
 /* FAQ Banner */
 .paul-faq-banner-section{
   color: #fff;
-  height: 40em;
+  height: 50em;
   overflow: hidden;
   position: relative;
   text-align: center;
+  border-radius: 4px;
   background: #333 center/cover;
 }
 
@@ -544,7 +545,7 @@ table, table td{
 }
 
 .paul-faq-banner-section h1{
-  font-size: 3.5em;
+  font-size: 3.75em;
   margin-bottom: .5em;
 }
 
@@ -564,6 +565,8 @@ table, table td{
 
 .paul-faq-list-section .faq-list{
   height: 100%;
+  overflow: hidden;
+  border-radius: .25em;
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
@@ -615,8 +618,9 @@ table, table td{
 .paul-faq-links-section .faq-link{
   height: 100%;
   display: block;
-  padding: 1.5em;
+  padding: 2em 1.5em;
   text-align: center;
+  border-radius: .25em;
   background-color: #f0f0f0;
 }
 

@@ -1,5 +1,9 @@
 {%- style -%}
-
+  {%- if section.settings.size -%}
+    .paul-faq-banner-section-{{ section.id }}{
+      height: 35em;
+    }
+  {%- endif -%}
   .paul-faq-banner-section-{{ section.id }}::before,
   .paul-faq-banner-section-{{ section.id }} .page-width {
     {%- if section.settings.image_background != blank -%}
@@ -46,6 +50,12 @@
         "id": "text",
         "label": "Text",
         "default": "Product information, assembly support, FAQS, user guides - everything in one place."
+      },
+      {
+        "type": "checkbox",
+        "id": "size",
+        "label": "Smaller Size",
+        "default": false
       },
       {
         "type": "checkbox",
