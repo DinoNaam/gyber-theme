@@ -55,15 +55,15 @@
 
 {% schema %}
   {
-    "name": "Customed Icon & Text",
-    "class": "paul-icon-text-section index-section",
+    "name": "FAQ Icon & Text",
+    "class": "paul-faq-list-section",
     "max_blocks": 5,
     "settings": [
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Customed Icon & Text"
+        "default": "Contact Us"
       },
       {
         "type": "checkbox",
@@ -75,22 +75,16 @@
         "type": "range",
         "id": "per_row",
         "label": "Collections per row",
-        "default": 5,
+        "default": 3,
         "min": 2,
         "max": 5,
         "step": 1
       }
     ],
     "presets": [{
-      "name": "Customed Icon & Text",
+      "name": "FAQ Icon & Text",
       "category": "Collection",
       "blocks": [
-        {
-          "type": "item"
-        },
-        {
-          "type": "item"
-        },
         {
           "type": "item"
         },
@@ -117,13 +111,13 @@
             "type": "text",
             "id": "title",
             "label": "Title",
-            "default": "Icon Title"
+            "default": "Title"
           },
           {
-            "type": "textarea",
+            "type": "richtext",
             "id": "desc",
             "label": "Description",
-            "default": "Icon Description"
+            "default": "<p>Description</p>"
           }
         ]
       }
