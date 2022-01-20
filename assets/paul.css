@@ -589,6 +589,7 @@ table, table td{
 
 .paul-faq-list-section .faq-list li{
   line-height: 2;
+  padding-left: 2em;
   margin-bottom: 1em;
 }
 .paul-faq-list-section .faq-list li:last-child{
@@ -599,6 +600,7 @@ table, table td{
   content: "";
   width: 1.5em;
   height: 1.5em;
+  margin-left: -2em;
   margin-right: .5em;
   display: inline-block;
   vertical-align: middle;

@@ -25,13 +25,33 @@
           {%- for block in section.blocks -%}
             <div class="grid__item medium-up--one-half">
               <div class="faq-list">
+                {%- liquid
+                  if block.settings.title != blank
+                    assign title_output = block.settings.title | escape
+                  elsif block.settings.blog != blank
+                    assign title_output = block.settings.blog.title | escape
+                  else
+                    assign title_output = 'No Title'
+                  endif
+                -%}
                 <header>
-                  <h3>{{ block.settings.blog.title }}</h3>
+                  <h3>{{ title_output }}</h3>
                 </header>
                 <ul>
-                  {%- for article in block.settings.blog.articles limit: 10 -%}
-                    <li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
-                  {%- endfor -%}
+                  {%- if block.settings.blog != blank-%}
+                    {%- for article in block.settings.blog.articles limit: 10 -%}
+                      <li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
+                    {%- endfor -%}
+                  {%- else -%}
+                    <li><a href="#">Our first priority is your health and safety. Read our response to COVID-19.</a></li>
+                    <li><a href="#">What are the pellets made from?</a></li>
+                    <li><a href="#">Will the wood pellets expire, or do they have a shelf life?</a></li>
+                    <li><a href="#">How do I complete the initial startup and burn-in?</a></li>
+                    <li><a href="#">What is the correct way to cook on the grill?</a></li>
+                    <li><a href="#">How do I turn the grill off?</a></li>
+                    <li><a href="#">Can I cook on the SMOKE setting?</a></li>
+                    <li><a href="#">What temperature can the grill heat up to?</a></li>
+                  {%- endif -%}
                 </ul>
               </div>
             </div>
@@ -89,7 +109,8 @@
           {
             "type": "text",
             "id": "title",
-            "label": "Heading",
+            "label": "Replace Heading",
+            "info": "Replace the default heading of the blog.",
             "default": "Pre-Sales Questions"
           },
           {
