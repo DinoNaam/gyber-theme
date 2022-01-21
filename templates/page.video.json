@@ -1,29 +1,33 @@
 {
   "wrapper": "div#paul-video-page",
   "sections": {
-    "1642749427c9024aa4": {
-      "type": "paul-faq-intro-card",
+    "1642749592c4f650ff": {
+      "type": "advanced-content",
       "blocks": {
-        "164274942748b137ad-0": {
-          "type": "image",
+        "3fac71f6-7092-4f67-9d32-4a1f59c7d2e2": {
+          "type": "html",
           "settings": {
+            "code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/YgWFQJfAmdA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "width": "50%",
+            "alignment": "top-middle"
           }
         },
-        "164274942748b137ad-1": {
-          "type": "text",
+        "1642749592f445b265-1": {
+          "type": "html",
           "settings": {
-            "title": "Gyber Basics",
-            "desc": "Got a new Gyber? Start here to learn the basics",
-            "content": ""
+            "code": "<h2>START GRILLING WITH Gyber<\/h2><p>  Our products are rated as \"2019 Best grills\" on Forbes' official website! We provide a world-class culinary experience in our customers through our innovative 8-1 grill, providing the ability to Grill, Smoke, Bake, Roast, Braise & BBQ! We provide the same world-class experience in our employees as we do to our customers, retail partners, and vendors. Recently, Z Grills has been launched as a sponsor of the World Food Competition. Z GRILLS is known for its durability and craftsmanship, as well as for its family-style and approach to business.<\/p>",
+            "width": "50%",
+            "alignment": "center"
           }
         }
       },
       "block_order": [
-        "164274942748b137ad-0",
-        "164274942748b137ad-1"
+        "3fac71f6-7092-4f67-9d32-4a1f59c7d2e2",
+        "1642749592f445b265-1"
       ],
       "settings": {
-        "divider": false
+        "full_width": false,
+        "space_around": true
       }
     },
     "videos": {
@@ -81,7 +85,7 @@
     }
   },
   "order": [
-    "1642749427c9024aa4",
+    "1642749592c4f650ff",
     "videos"
   ]
 }
