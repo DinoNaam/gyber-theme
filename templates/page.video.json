@@ -1,9 +1,6 @@
 {
   "wrapper": "div#paul-video-page",
   "sections": {
-    "main": {
-      "type": "page"
-    },
     "1642749592c4f650ff": {
       "type": "advanced-content",
       "blocks": {
@@ -29,7 +26,9 @@
         "1642749592f445b265-1"
       ],
       "settings": {
+        "title": "Video",
         "full_width": false,
+        "use_custom_style": true,
         "space_around": true
       }
     },
@@ -102,7 +101,9 @@
         "164275019289f0b0cd-1"
       ],
       "settings": {
+        "title": "",
         "full_width": false,
+        "use_custom_style": true,
         "space_around": true
       }
     }
