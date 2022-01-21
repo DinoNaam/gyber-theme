@@ -7,6 +7,7 @@
         "3fac71f6-7092-4f67-9d32-4a1f59c7d2e2": {
           "type": "html",
           "settings": {
+            "use_custom_style": true,
             "code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/YgWFQJfAmdA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
             "width": "50%",
             "alignment": "top-middle"
@@ -15,6 +16,7 @@
         "1642749592f445b265-1": {
           "type": "html",
           "settings": {
+            "use_custom_style": true,
             "code": "<h2>START GRILLING WITH Gyber<\/h2><p>  Our products are rated as \"2019 Best grills\" on Forbes' official website! We provide a world-class culinary experience in our customers through our innovative 8-1 grill, providing the ability to Grill, Smoke, Bake, Roast, Braise & BBQ! We provide the same world-class experience in our employees as we do to our customers, retail partners, and vendors. Recently, Gyber has been launched as a sponsor of the World Food Competition. Gyber is known for its durability and craftsmanship, as well as for its family-style and approach to business.<\/p>",
             "width": "50%",
             "alignment": "center"
@@ -28,7 +30,6 @@
       "settings": {
         "title": "Video",
         "full_width": false,
-        "use_custom_style": true,
         "space_around": true
       }
     },
@@ -91,6 +92,7 @@
         "164275019289f0b0cd-1": {
           "type": "html",
           "settings": {
+            "use_custom_style": false,
             "code": "<p align=\"center\">\n<a class=\"paul-btn fill\" style=\"margin-right: 3em\" href=\"#\">Video Reviews By BBQ Gurus<\/a>\n<a class=\"paul-btn fill\" href=\"#\">Assembly Videos<\/a>\n<\/p>",
             "width": "100%",
             "alignment": "center"
@@ -103,7 +105,6 @@
       "settings": {
         "title": "",
         "full_width": false,
-        "use_custom_style": true,
         "space_around": true
       }
     }
