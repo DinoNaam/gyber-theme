@@ -1,0 +1,12 @@
+{
+  "name": "Video Page Template",
+  "wrapper": "div#paul-video-page",
+  "sections": {
+    "videos": {
+      "type": "paul-community-video"
+    }
+  },
+  "order": [
+    "videos"
+  ]
+}

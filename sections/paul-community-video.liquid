@@ -1,6 +1,14 @@
+{%- style -%}
+  {%- if section.settings.header_align == 'center' -%}
+    .paul-community-video-section-{{ section.id }} .section-header{
+      text-align: center;
+    }
+  {%- endif -%}
+{%- endstyle -%}
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="paul-community-video-section">
+<div class="paul-community-video-section paul-community-video-section-{{ section.id }}">
   <div class="section-header">
     <div class="page-width">
       {%- if section.settings.title != blank -%}
@@ -13,7 +21,7 @@
   </div>
   <div class="section-content">
     <div class="page-width">
-      <div class="grid grid--uniform">
+      <div class="grid grid--uniform grid--flush-bottom">
         {%- liquid
           assign isEmpty = true
           if section.blocks.size > 0
@@ -22,13 +30,9 @@
         -%}
 
         {%- if isEmpty -%}
-          <div class="page-width">
-            <div class="grid">
-              <div class="grid__item">
-                <div class="rte">
-                  {{ 'home_page.onboarding.no_content' | t }}
-                </div>
-              </div>
+          <div class="grid__item">
+            <div class="rte">
+              {{ 'home_page.onboarding.no_content' | t }}
             </div>
           </div>
         {%- else -%}
@@ -90,6 +94,22 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "type": "select",
+        "id": "header_align",
+        "label": "Header Text Align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ],
+        "default": "left"
       }
     ],
     "presets": [{
