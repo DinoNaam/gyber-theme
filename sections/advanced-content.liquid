@@ -4,6 +4,11 @@
 {%- unless section.settings.full_width -%}
   <div class="page-width">
 {%- endunless -%}
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+  {%- endif -%}
   <div class="custom-content">
   {%- for block in section.blocks -%}
     {%- liquid
@@ -27,9 +32,13 @@
         {%- case block.type -%}
           {%- when 'html' -%}
             {%- if block.settings.code != blank -%}
-              <div class="rte" data-section-id="{{ section.id }}" data-section-type="featured-content-section">
+              {%- if block.settings.use_custom_style -%}
+                <div class="rte" data-section-id="{{ section.id }}" data-section-type="featured-content-section">
+              {%- endif -%}
                 {{ block.settings.code }}
-              </div>
+              {%- if block.settings.use_custom_style -%}
+                </div>
+              {%- endif -%}
             {%- else -%}
               <div class="rte">
                 {{ 'home_page.onboarding.no_content' | t }}
@@ -91,10 +100,21 @@
     "max_blocks": 3,
     "settings": [
       {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
         "type": "checkbox",
         "id": "full_width",
         "label": "Full page width",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "use_custom_style",
+        "label": "Use Custom Style",
+        "default": true
       },
       {
         "type": "checkbox",
@@ -106,7 +126,7 @@
     "blocks": [
       {
         "type": "html",
-        "name": "Custom content",
+        "name": "Advanced Custom content",
         "settings": [
           {
             "type": "textarea",

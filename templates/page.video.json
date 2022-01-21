@@ -1,6 +1,9 @@
 {
   "wrapper": "div#paul-video-page",
   "sections": {
+    "main": {
+      "type": "page"
+    },
     "1642749592c4f650ff": {
       "type": "advanced-content",
       "blocks": {
@@ -89,7 +92,7 @@
         "164275019289f0b0cd-1": {
           "type": "html",
           "settings": {
-            "code": "<p align=\"center\">\n<a class=\"paul-btn\" style=\"margin-right: 3em\" href=\"#\">Video Reviews By BBQ Gurus<\/a>\n<a class=\"paul-btn\" href=\"#\">Assembly Videos<\/a>\n<\/p>",
+            "code": "<p align=\"center\">\n<a class=\"paul-btn fill\" style=\"margin-right: 3em\" href=\"#\">Video Reviews By BBQ Gurus<\/a>\n<a class=\"paul-btn fill\" href=\"#\">Assembly Videos<\/a>\n<\/p>",
             "width": "100%",
             "alignment": "center"
           }

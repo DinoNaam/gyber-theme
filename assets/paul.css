@@ -44,6 +44,10 @@ table, table td{
   border-radius: .5em;
   border: 2px solid var(--paul-primary);
 }
+.paul-btn.fill{
+  color: #fff;
+  background: var(--paul-primary);
+}
 
 
 /* Customed Collection */
@@ -758,6 +762,15 @@ table, table td{
 #paul-faq-page .paul-faq-list-section .faq-list header{
   color: #222;
   background-color: #ddd;
+}
+
+/* ! Video Reset */
+#paul-video-page .paul-community-video-section .grid--flush-bottom{
+  margin-bottom: -3em;
+}
+
+#paul-video-page .paul-community-video-section .grid--flush-bottom > .grid__item{
+  margin-bottom: 3em;
 }
 
 /* ! Product Desc Reset */
