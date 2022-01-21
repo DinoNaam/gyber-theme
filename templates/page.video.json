@@ -1,12 +1,87 @@
 {
-  "name": "Video Page Template",
   "wrapper": "div#paul-video-page",
   "sections": {
+    "1642749427c9024aa4": {
+      "type": "paul-faq-intro-card",
+      "blocks": {
+        "164274942748b137ad-0": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "164274942748b137ad-1": {
+          "type": "text",
+          "settings": {
+            "title": "Gyber Basics",
+            "desc": "Got a new Gyber? Start here to learn the basics",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "164274942748b137ad-0",
+        "164274942748b137ad-1"
+      ],
+      "settings": {
+        "divider": false
+      }
+    },
     "videos": {
-      "type": "paul-community-video"
+      "type": "paul-community-video",
+      "blocks": {
+        "2e5eed1d-53fe-4d5e-a6d8-ce6594d68b47": {
+          "type": "item",
+          "settings": {
+            "title": "Moonshine Bandits - \"Grillin' & Chillin\" Episode 1",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=wzDhOXRTAxg"
+          }
+        },
+        "79d74167-d684-4f2e-b398-8ce4b0f16eab": {
+          "type": "item",
+          "settings": {
+            "title": "Moonshine Bandits - Grillin' & Chillin Episode 4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=YgWFQJfAmdA"
+          }
+        },
+        "0a4fb00f-b024-43a2-b861-73c1fcbaa0c8": {
+          "type": "item",
+          "settings": {
+            "title": "Wood fired steaks and roasted potatoes recipe",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=SfzoXzwaUd4"
+          }
+        },
+        "4af1c531-f4b2-4447-9238-588c5362ddb1": {
+          "type": "item",
+          "settings": {
+            "title": "Sweet buffalo wood fired chicken wings",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=nelDAs_J8AA"
+          }
+        },
+        "19138ed6-27d4-4446-8468-d0c1ebe42b80": {
+          "type": "item",
+          "settings": {
+            "title": "Wood fired pizza recipe",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=pf58EnBNwww"
+          }
+        }
+      },
+      "block_order": [
+        "2e5eed1d-53fe-4d5e-a6d8-ce6594d68b47",
+        "79d74167-d684-4f2e-b398-8ce4b0f16eab",
+        "0a4fb00f-b024-43a2-b861-73c1fcbaa0c8",
+        "4af1c531-f4b2-4447-9238-588c5362ddb1",
+        "19138ed6-27d4-4446-8468-d0c1ebe42b80"
+      ],
+      "settings": {
+        "title": "Featured Videos",
+        "text": "",
+        "divider": false,
+        "header_align": "center"
+      }
     }
   },
   "order": [
+    "1642749427c9024aa4",
     "videos"
   ]
 }
