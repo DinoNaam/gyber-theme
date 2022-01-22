@@ -38,13 +38,6 @@
         "related_count": 5
       }
     },
-    "recently": {
-      "type": "recently-viewed",
-      "settings": {
-        "show_section": true,
-        "recent_count": 5
-      }
-    },
     "1642849864eaa5db9f": {
       "type": "paul-product-faq",
       "blocks": {
@@ -105,6 +98,13 @@
         "autoplay": true,
         "autoplay_speed": 5
       }
+    },
+    "recently": {
+      "type": "recently-viewed",
+      "settings": {
+        "show_section": true,
+        "recent_count": 5
+      }
     }
   },
   "order": [
@@ -112,8 +112,8 @@
     "product",
     "story",
     "recommendations",
-    "recently",
     "1642849864eaa5db9f",
-    "16428469705ffe5823"
+    "16428469705ffe5823",
+    "recently"
   ]
 }
