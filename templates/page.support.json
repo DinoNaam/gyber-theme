@@ -7,6 +7,7 @@
         "image_background": "shopify:\/\/shop_images\/3banner.jpg",
         "title": "GYBER SUPPORT CENTER",
         "text": "Product information, assembly support, FAQS, user guides - everything in one place.",
+        "size": "large",
         "divider": false
       }
     },
