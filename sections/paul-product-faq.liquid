@@ -1,0 +1,120 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="page-width">
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+    </div>
+  {%- endif -%}
+
+  <div class="grid grid--uniform">
+    {%- liquid
+      assign isEmpty = true
+      if section.blocks.size > 0
+        assign isEmpty = false
+      endif
+    -%}
+
+    {%- for block in section.blocks -%}
+      <div class="faq-item">
+        {%- liquid
+          if block.settings.title != blank
+            assign title_output = block.settings.title
+          else
+            assign title_output = 'Title'
+          endif
+        -%}
+        <header>
+          <label class="faq-title" for="{{ block.id }}-input">{{ title_output }}</label>
+        </header>
+        <input class="faq-checkbox" type="checkbox" id="{{ block.id }}-input" />
+        <article>
+          {{ block.settings.desc }}
+        </article>
+      </div>
+    {%- endfor -%}
+
+    {%- if isEmpty -%}
+      <div class="faq-item">
+        <header>
+          <label class="faq-title" for="{{ section.id }}-product-example-input">Question Title</label>
+        </header>
+        <input class="faq-checkbox" type="checkbox" id="{{ section.id }}-product-example-input" />
+        <article>
+          {{ 'home_page.onboarding.no_content' | t }}
+        </article>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Product FAQ",
+    "class": "paul-product-faq-section",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Contact Us"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Collections per row",
+        "default": 3,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "presets": [{
+      "name": "Product FAQ",
+      "category": "Collection",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "desc",
+            "label": "Description",
+            "default": "<p>Description</p>"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

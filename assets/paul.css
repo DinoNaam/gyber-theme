@@ -757,6 +757,58 @@ table, table td{
   margin-bottom: .5em;
 }
 
+/*
+  Product Page
+*/
+
+
+/* FAQ */
+.paul-product-faq-section{
+  padding: 4em 0;
+}
+
+.paul-product-faq-section .faq-item header{
+  display: flex;
+  padding: 0 .75em;
+  align-items: center;
+  background-color: #edeeef;
+}
+
+.paul-product-faq-section .faq-item header::before{
+  content: "Q";
+  width: 2rem;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline-block;
+  background-color: var(--paul-primary);
+  border-radius: 4px;
+  margin-right: 2rem;
+}
+
+.paul-product-faq-section .faq-item .faq-title{
+  flex: 1;
+  padding: 1.5em 0;
+  margin-bottom: 0;
+}
+
+.paul-product-faq-section .faq-item article{
+  padding: 0 2em;
+  max-height: 0;
+  overflow: hidden;
+  transition: padding .3s, max-height .3s;
+}
+
+.paul-product-faq-section .faq-checkbox{
+  display: none;
+}
+
+.paul-product-faq-section .faq-checkbox:checked + article{
+  padding: 2em;
+  max-height: 100em;
+}
+
+
 /* ! FAQ Reset */
 #paul-faq-page .paul-faq-list-section .grid--flush-bottom{
   margin-bottom: -3em;
