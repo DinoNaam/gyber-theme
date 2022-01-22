@@ -49,6 +49,53 @@ table, table td{
   background: var(--paul-primary);
 }
 
+/* 
+  General Sections
+*/
+
+/* Banner */
+.paul-general-banner-section{
+  color: #fff;
+  height: 50em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  background: #333 center/cover;
+}
+
+.paul-general-banner-section::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  filter: blur(5px);
+}
+
+.paul-general-banner-section .page-width{
+  z-index: 1;
+  height: 100%;
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: center/cover no-repeat;
+}
+
+.paul-general-banner-section h1{
+  font-size: 3.75em;
+  margin-bottom: .5em;
+}
+
+.paul-general-banner-section-paul-general-banner h1:last-child{
+  margin-bottom: 0;
+}
+
+.paul-general-banner-section p{
+  font-size: 1.5em;
+}
 
 /* Customed Collection */
 .paul-collection-item{
@@ -520,46 +567,6 @@ table, table td{
   FAQ Page
 */
 
-/* FAQ Banner */
-.paul-faq-banner-section{
-  color: #fff;
-  height: 50em;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  border-radius: 4px;
-  background: #333 center/cover;
-}
-
-.paul-faq-banner-section::before{
-  content: "";
-  height: 100%;
-  width: 100%;
-  display: block;
-  position: absolute;
-  filter: blur(5px);
-}
-
-.paul-faq-banner-section .page-width{
-  z-index: 1;
-  height: 100%;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  background: center/cover no-repeat;
-}
-
-.paul-faq-banner-section h1{
-  font-size: 3.75em;
-  margin-bottom: .5em;
-}
-
-.paul-faq-banner-section p{
-  font-size: 1.5em;
-}
-
 /* FAQ List */
 .paul-faq-list-section{
   padding: 4em 0;
@@ -773,7 +780,7 @@ table, table td{
   margin-bottom: 3em;
 }
 
-/* ! Product Desc Reset */
+/* ! Product Reset */
 .page-content--product tr:nth-child(odd){
   background: rgba(0, 0, 0, .05);
 }
@@ -820,7 +827,7 @@ table, table td{
 /* 附加的 Notice 功能 */
 .product-single__notice{
   padding: 1em;
-  background: rgba(255, 79, 51, 0.06);
+  background: #eaeaea;
 }
 
 .product-single__notice p:last-child{

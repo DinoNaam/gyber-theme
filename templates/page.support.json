@@ -2,7 +2,7 @@
   "wrapper": "div#paul-support-page",
   "sections": {
     "banner": {
-      "type": "paul-faq-banner",
+      "type": "paul-general-banner",
       "settings": {
         "image_background": "shopify:\/\/shop_images\/3banner.jpg",
         "title": "GYBER SUPPORT CENTER",

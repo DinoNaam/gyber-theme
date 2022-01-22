@@ -1,11 +1,23 @@
 {%- style -%}
-  {%- if section.settings.size -%}
-    .paul-faq-banner-section-{{ section.id }}{
+  {%- if section.settings.size == 'medium' -%}
+    .paul-general-banner-section-{{ section.id }}{
       height: 35em;
     }
+  {%- elsif section.settings.size == 'small' -%}
+    .paul-general-banner-section-{{ section.id }}{
+      height: auto;
+    }
+
+    .paul-general-banner-section-{{ section.id }} h1{
+      font-size: 2.5em;
+    }
+
+    .paul-general-banner-section-{{ section.id }} p{
+      font-size: 1em;
+    }
   {%- endif -%}
-  .paul-faq-banner-section-{{ section.id }}::before,
-  .paul-faq-banner-section-{{ section.id }} .page-width {
+  .paul-general-banner-section-{{ section.id }}::before,
+  .paul-general-banner-section-{{ section.id }} .page-width {
     {%- if section.settings.image_background != blank -%}
       background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
     {%- endif -%}
@@ -14,7 +26,7 @@
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="paul-faq-banner-section paul-faq-banner-section-{{ section.id }}">
+<div class="paul-general-banner-section paul-general-banner-section-{{ section.id }}">
   <div class="page-width">
     {%- if section.settings.title != blank -%}
       <h1 class="section-header__title">{{ section.settings.title }}</h1>
@@ -52,10 +64,24 @@
         "default": "Product information, assembly support, FAQS, user guides - everything in one place."
       },
       {
-        "type": "checkbox",
+        "type": "select",
         "id": "size",
-        "label": "Smaller Size",
-        "default": false
+        "label": "Size",
+        "options": [
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          }
+        ],
+        "default": "medium"
       },
       {
         "type": "checkbox",

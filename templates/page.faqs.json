@@ -2,7 +2,7 @@
   "wrapper": "div#paul-faq-page",
   "sections": {
     "banner": {
-      "type": "paul-faq-banner",
+      "type": "paul-general-banner",
       "settings": {
         "image_background": "shopify:\/\/shop_images\/d7c13d03b3e545b21fb33a6b6e110352.png",
         "title": "FREQUENTLY ASK QUESTIONS ABOUT GYBER",
