@@ -1,0 +1,24 @@
+{
+  "name": "Product Detail Page Template",
+  "wrapper": "div#paul-product-detail-page",
+  "sections": {
+    "videos": {
+      "type": "paul-general-banner"
+    },
+    "product": {
+      "type": "product-template"
+    },
+    "story": {
+      "type": "product-story-sections"
+    },
+    "recommendations": {
+      "type": "product-recommendations"
+    },
+    "recently": {
+      "type": "recently-viewed"
+    }
+  },
+  "order": [
+    "videos", "product", "story", "recommendations", "recently"
+  ]
+}
