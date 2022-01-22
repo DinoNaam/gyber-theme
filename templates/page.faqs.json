@@ -1,13 +1,13 @@
 {
   "wrapper": "div#paul-faq-page",
   "sections": {
-    "banner": {
+    "16428444515d58579e": {
       "type": "paul-general-banner",
       "settings": {
-        "image_background": "shopify:\/\/shop_images\/d7c13d03b3e545b21fb33a6b6e110352.png",
+        "image_background": "shopify:\/\/shop_images\/3banner.jpg",
         "title": "FREQUENTLY ASK QUESTIONS ABOUT GYBER",
         "text": "",
-        "size": true,
+        "size": "medium",
         "divider": false
       }
     },
@@ -122,7 +122,7 @@
     }
   },
   "order": [
-    "banner",
+    "16428444515d58579e",
     "164266496575276321",
     "list",
     "1642665138a6c0cdef"
