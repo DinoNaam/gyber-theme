@@ -45,6 +45,42 @@
         "recent_count": 5
       }
     },
+    "1642849864eaa5db9f": {
+      "type": "paul-product-faq",
+      "blocks": {
+        "1642849864096d80a2-0": {
+          "type": "item",
+          "settings": {
+            "title": "Anvil-Go Gas lnfrared Grill",
+            "desc": "<p>The difference is in the lid material.<\/p><p>Choosing between them is not just a matter of color preference. Our Boulder Gas Infrared Grill is built with a stainless steel lid and the Anvil-Go Gas lnfrared Grill is with a high-temperature, powder-coat steel lid. Stainless steel lids and high-temperature, powder-coat steel lids are commonly seen on pellet grills and they each have their own advantages.<\/p><p>The stainless steel material boasts excellent heat retention, corrosion resistance, rust resistance, and durability with no paint to fade, flake, or fail. It’s built to last and grills with a stainless steel lid excel in cold weather performance. While the heavy-duty steel lid features a powder-coat finish to resist high temperatures. It cleans easily to maintain a vibrant, new appearance.<\/p><p>For most grillers, grills with a high-temperature, powder-coat steel lid are sufficient to stand heavy daily use. But if you would like to have a more high-end version and expect your grill to have the best performance in temperature control, you won't go wrong with the Boulder Gas Infrared Grill.<\/p>"
+          }
+        },
+        "1642849864096d80a2-1": {
+          "type": "item",
+          "settings": {
+            "title": "Title",
+            "desc": "<p>Description<\/p>"
+          }
+        },
+        "1642849864096d80a2-2": {
+          "type": "item",
+          "settings": {
+            "title": "Title",
+            "desc": "<p>Description<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1642849864096d80a2-0",
+        "1642849864096d80a2-1",
+        "1642849864096d80a2-2"
+      ],
+      "settings": {
+        "title": "Contact Us",
+        "divider": false,
+        "per_row": 3
+      }
+    },
     "16428469705ffe5823": {
       "type": "slideshow",
       "blocks": {
@@ -84,6 +120,7 @@
     "story",
     "recommendations",
     "recently",
+    "1642849864eaa5db9f",
     "16428469705ffe5823"
   ]
 }
