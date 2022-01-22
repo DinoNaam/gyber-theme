@@ -89,6 +89,7 @@
             "link_text_2": "",
             "color_accent": "#ff4f33",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/123.png",
             "focal_point": "center center"
           }
         }
