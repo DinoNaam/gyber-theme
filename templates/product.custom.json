@@ -1,24 +1,89 @@
 {
-  "name": "Product Detail Page Template",
   "wrapper": "div#paul-product-detail-page",
   "sections": {
     "videos": {
-      "type": "paul-general-banner"
+      "type": "paul-general-banner",
+      "settings": {
+        "image_background": "shopify:\/\/shop_images\/1231231213.png",
+        "title": "DEAL OF THE WEEK",
+        "text": "NEW WEEK, NEW DEAL! Become a pellet grilling pro and throw an epic game day party with this BBQ Party Kit along with your 10002B2E grill.",
+        "size": "small",
+        "divider": false
+      }
     },
     "product": {
-      "type": "product-template"
+      "type": "product-template",
+      "settings": {
+        "notice": "",
+        "description_style": "full",
+        "social_enable": true,
+        "image_position": "left",
+        "image_size": "medium",
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
     },
     "story": {
-      "type": "product-story-sections"
+      "type": "product-story-sections",
+      "settings": {
+      }
     },
     "recommendations": {
-      "type": "product-recommendations"
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
     },
     "recently": {
-      "type": "recently-viewed"
+      "type": "recently-viewed",
+      "settings": {
+        "show_section": true,
+        "recent_count": 5
+      }
+    },
+    "16428469705ffe5823": {
+      "type": "slideshow",
+      "blocks": {
+        "164284697097558bce-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "JOIN OUR VIP GROUP TODAY",
+            "title_size": 40,
+            "subheading": "Become a VIP member today and receive exclusive offers and updates.",
+            "link": "shopify:\/\/pages\/test",
+            "link_text": "Join Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ff4f33",
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "164284697097558bce-0"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
     }
   },
   "order": [
-    "videos", "product", "story", "recommendations", "recently"
+    "videos",
+    "product",
+    "story",
+    "recommendations",
+    "recently",
+    "16428469705ffe5823"
   ]
 }
