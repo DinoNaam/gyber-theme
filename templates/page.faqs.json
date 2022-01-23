@@ -8,6 +8,7 @@
         "title": "FREQUENTLY ASK QUESTIONS ABOUT GYBER",
         "text": "",
         "size": "medium",
+        "style": "blur",
         "divider": false
       }
     },

@@ -8,6 +8,7 @@
         "title": "GYBER SUPPORT CENTER",
         "text": "Product information, assembly support, FAQS, user guides - everything in one place.",
         "size": "large",
+        "style": "blur",
         "divider": false
       }
     },

@@ -16,12 +16,25 @@
       font-size: 1em;
     }
   {%- endif -%}
-  .paul-general-banner-section-{{ section.id }}::before,
-  .paul-general-banner-section-{{ section.id }} .page-width {
-    {%- if section.settings.image_background != blank -%}
-      background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
-    {%- endif -%}
-  }
+
+  {%- if section.settings.style == 'blur' -%}
+    .paul-general-banner-section-{{ section.id }}::before{
+      content: "";
+    }
+
+    .paul-general-banner-section-{{ section.id }}::before,
+    .paul-general-banner-section-{{ section.id }} .page-width {
+      {%- if section.settings.image_background != blank -%}
+        background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
+      {%- endif -%}
+    }
+  {% else %}
+    .paul-general-banner-section-{{ section.id }} {
+      {%- if section.settings.image_background != blank -%}
+        background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
+      {%- endif -%}
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
@@ -82,6 +95,22 @@
           }
         ],
         "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "style",
+        "label": "Style",
+        "options": [
+          {
+            "value": "blur",
+            "label": "Blur Background"
+          },
+          {
+            "value": "simple",
+            "label": "Simple Full Width"
+          }
+        ],
+        "default": "simple"
       },
       {
         "type": "checkbox",
