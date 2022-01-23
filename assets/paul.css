@@ -768,27 +768,44 @@ table, table td{
 }
 
 .paul-product-faq-section .faq-item header{
-  display: flex;
-  padding: 0 .75em;
-  align-items: center;
+  position: relative;
+  user-select: none;
   background-color: #edeeef;
 }
 
+.paul-product-faq-section .faq-item header::before,
+.paul-product-faq-section .faq-item header::after{
+  display: block;
+  position: absolute;
+  pointer-events: none;
+}
+
 .paul-product-faq-section .faq-item header::before{
-  content: "Q";
+  top: 50%;
+  left: .5em;
   width: 2rem;
   color: #fff;
+  content: "Q";
   font-size: 1.2em;
   text-align: center;
-  display: inline-block;
-  background-color: var(--paul-primary);
   border-radius: 4px;
-  margin-right: 2rem;
+  transform: translateY(-50%);
+  background-color: var(--paul-primary);
+}
+
+.paul-product-faq-section .faq-item header::after{
+  top: 1.25em;
+  right: 1em;
+  content: "";
+  width: 1em;
+  height: 1em;
+  transition: transform .3s;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 300 300'%3E%3Cdefs%3E%3Cpath id='a' d='M.8 71.6h299.1V237H.8z'/%3E%3C/defs%3E%3CclipPath id='b'%3E%3Cuse xlink:href='%23a' overflow='visible'/%3E%3C/clipPath%3E%3Cpath d='M5.2 76.6C-.7 82.5-.7 92.1 5.2 98L139 232.3c3.1 3.2 7.3 4.5 11.4 4.3 4.1.2 8.3-1.1 11.4-4.3L295.6 98c5.9-5.9 5.9-15.5 0-21.4-5.9-5.9-15.4-5.9-21.3 0L150.4 201 26.5 76.6c-5.9-5.9-15.4-5.9-21.3 0zm0 0' clip-path='url(%23b)'/%3E%3C/svg%3E") no-repeat center center;
 }
 
 .paul-product-faq-section .faq-item .faq-title{
   flex: 1;
-  padding: 1.5em 0;
+  padding: 1.5em 5em;
   margin-bottom: 0;
 }
 
@@ -803,7 +820,11 @@ table, table td{
   display: none;
 }
 
-.paul-product-faq-section .faq-checkbox:checked + article{
+.paul-product-faq-section .faq-checkbox:checked ~ header::after{
+  transform: rotate(180deg);
+}
+
+.paul-product-faq-section .faq-checkbox:checked ~ article{
   padding: 2em;
   max-height: 100em;
 }

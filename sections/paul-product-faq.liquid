@@ -3,7 +3,7 @@
 <div class="page-width">
   {%- if section.settings.title != blank -%}
     <div class="section-header">
-      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+      <h2 class="section-header__title product-single__description">{{ section.settings.title }}</h2>
     </div>
   {%- endif -%}
 
@@ -24,10 +24,10 @@
             assign title_output = 'Title'
           endif
         -%}
+        <input class="faq-checkbox" type="checkbox" id="{{ block.id }}-input" />
         <header>
           <label class="faq-title" for="{{ block.id }}-input">{{ title_output }}</label>
         </header>
-        <input class="faq-checkbox" type="checkbox" id="{{ block.id }}-input" />
         <article>
           {{ block.settings.desc }}
         </article>
