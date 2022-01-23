@@ -1,6 +1,7 @@
 {%- render 'product-template',
   product: product,
   notice: section.settings.notice,
+  links: section.settings.links,
   description_style: section.settings.description_style,
   image_position: section.settings.image_position,
   image_container_width: section.settings.image_size,
@@ -29,6 +30,12 @@
         "type": "richtext",
         "id": "notice",
         "label": "Notice"
+      },
+      {
+        "type": "richtext",
+        "id": "links",
+        "label": "Helpful Links",
+        "info": "Add links to your product page."
       },
       {
         "type": "select",

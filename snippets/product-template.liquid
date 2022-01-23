@@ -295,6 +295,12 @@
               </div>
             {%- endif -%}
 
+            {%- if links != blank -%}
+              <div class="product-single__links">
+                {{ links }}
+              </div>
+            {%- endif -%}
+
             {%- unless description_style == 'full' -%}
               <div class="product-single__description rte">
                 {{ product.description }}
