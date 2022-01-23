@@ -15,7 +15,7 @@
     "product": {
       "type": "product-template",
       "settings": {
-        "notice": "",
+        "notice": "<p>123<\/p>",
         "description_style": "full",
         "social_enable": true,
         "image_position": "left",
