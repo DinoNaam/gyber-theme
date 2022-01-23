@@ -15,7 +15,7 @@
     "product": {
       "type": "product-template",
       "settings": {
-        "notice": "<p>123<\/p>",
+        "notice": "<p><strong>Shipping Info:<\/strong><\/p><p>1. Delivery in 3-8 business days.<\/p><p>2. Orders containing multiple products will be divided into separate shipments.<\/p>",
         "links": "<p><a href=\"\/pages\/contact\" target=\"_blank\" title=\"Contact\">SHIPPING POLICY<\/a><\/p><p><a href=\"\/pages\/contact\" target=\"_blank\" title=\"Contact\">RETURN POLICY<\/a><\/p><p><a href=\"\/pages\/test\" target=\"_blank\" title=\"About US\">ASK A QUESTION<\/a><\/p>",
         "description_style": "full",
         "social_enable": true,
