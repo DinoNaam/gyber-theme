@@ -32,7 +32,13 @@
       }
     },
     "contact": {
-      "type": "contact-form"
+      "type": "contact-form",
+      "settings": {
+        "title": "",
+        "show_phone": false,
+        "show_order_number": true,
+        "narrow_column": false
+      }
     },
     "164299716607f53894": {
       "type": "paul-faq-icon-text",
