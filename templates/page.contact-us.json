@@ -32,25 +32,7 @@
       }
     },
     "contact": {
-      "type": "page-contact-template",
-      "blocks": {
-        "3bced384-9092-425d-bbab-7b2d95dff68e": {
-          "type": "contact-form",
-          "settings": {
-            "title": "",
-            "show_phone": false,
-            "show_order_number": true,
-            "narrow_column": true
-          }
-        }
-      },
-      "block_order": [
-        "3bced384-9092-425d-bbab-7b2d95dff68e"
-      ],
-      "settings": {
-        "page_title_enable": false,
-        "page_content_enable": true
-      }
+      "type": "contact-form"
     },
     "164299716607f53894": {
       "type": "paul-faq-icon-text",
