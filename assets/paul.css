@@ -56,7 +56,7 @@ table, table td{
 }
 
 .paul-btn.large{
-  padding: 1em 1.5em;
+  padding: .75em 1.5em;
 }
 
 /* 
@@ -106,16 +106,12 @@ table, table td{
 }
 
 /* Card Banner */
-.paul-general-card-banner-section{
-  padding: 5em 0;
-}
-
 .paul-general-card-banner-section .card-banner{
   color: #fff;
   height: 100%;
   padding: 3em;
   border-radius: 0.25em;
-  background-color: #000;
+  background: #000 center/cover;
 }
 
 .paul-general-card-banner-section .card-banner p{
@@ -792,10 +788,6 @@ table, table td{
 
 
 /* FAQ */
-.paul-product-faq-section{
-  padding: 4em 0;
-}
-
 .paul-product-faq-section label{
   font-size: inherit;
   font-weight: bold;
@@ -901,14 +893,17 @@ table, table td{
   background: rgba(0, 0, 0, .05);
 }
 
+.section-header__title.has-logo,
 .product-single__description h2,
 .product-single__description-full h2{
+  text-align: left;
   padding-left: .5em;
   border-left: 2px solid var(--paul-primary);
 }
 
-.product-single__description h2:before,
-.product-single__description-full h2:before{
+.section-header__title.has-logo::before,
+.product-single__description h2::before,
+.product-single__description-full h2::before{
   height: 1em;
   content: "";
   width: 2.75em;

@@ -1,13 +1,21 @@
+{%- liquid
+  if section.settings.show_logo == true
+    assign title_classname = "section-header__title has-logo"
+  else
+    assign title_classname = "section-header__title"
+  endif
+-%}
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="page-width">
   {%- if section.settings.title != blank -%}
     <div class="section-header">
-      <h2 class="section-header__title product-single__description">{{ section.settings.title }}</h2>
+      <h2 class="{{ title_classname }}">{{ section.settings.title }}</h2>
     </div>
   {%- endif -%}
 
-  <div class="grid grid--uniform">
+  <div class="section-content">
     {%- liquid
       assign isEmpty = true
       if section.blocks.size > 0
@@ -56,7 +64,7 @@
 {% schema %}
   {
     "name": "Product FAQ",
-    "class": "paul-product-faq-section",
+    "class": "paul-product-faq-section index-section",
     "max_blocks": 5,
     "settings": [
       {
@@ -79,6 +87,12 @@
         "min": 2,
         "max": 5,
         "step": 1
+      },
+      {
+        "type": "checkbox",
+        "id": "show_logo",
+        "label": "Show Logo",
+        "default": true
       }
     ],
     "presets": [{
