@@ -44,9 +44,19 @@ table, table td{
   border-radius: .5em;
   border: 2px solid var(--paul-primary);
 }
+
+.paul-btn:not(.fill).white{
+  color: #fff;
+  border-color: #fff;
+}
+
 .paul-btn.fill{
   color: #fff;
   background: var(--paul-primary);
+}
+
+.paul-btn.large{
+  padding: 1em 1.5em;
 }
 
 /* 
@@ -93,6 +103,27 @@ table, table td{
 
 .paul-general-banner-section p{
   font-size: 1.5em;
+}
+
+/* Card Banner */
+.paul-general-card-banner-section{
+  padding: 5em 0;
+}
+
+.paul-general-card-banner-section .card-banner{
+  color: #fff;
+  height: 100%;
+  padding: 3em;
+  border-radius: 0.25em;
+  background-color: #000;
+}
+
+.paul-general-card-banner-section .card-banner p{
+  margin: 1.5rem 0;
+}
+
+.paul-general-card-banner-section .card-banner p:last-child{
+  margin-bottom: 0;
 }
 
 /* Customed Collection */
@@ -862,6 +893,10 @@ table, table td{
 }
 
 /* ! Product Reset */
+.template-product .main-content .page-width{
+  max-width: 1200px;
+}
+
 .page-content--product tr:nth-child(odd){
   background: rgba(0, 0, 0, .05);
 }

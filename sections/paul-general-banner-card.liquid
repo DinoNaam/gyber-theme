@@ -1,0 +1,94 @@
+{%- style -%}
+  .paul-general-card-banner-section-{{ section.id }} .card-banner{
+    {%- if section.settings.image_background != blank -%}
+      background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
+    {%- endif -%}
+  }
+{%- endstyle -%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-general-card-banner-section paul-general-card-banner-section-{{ section.id }}">
+  <div class="page-width">
+    <div class="card-banner text-{{ section.settings.align_text }}">
+      {%- if section.settings.title != blank -%}
+        <h1 class="section-header__title">{{ section.settings.title }}</h1>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+        {%- if section.settings.link_text != blank -%}
+          <p>
+            <a class="paul-btn white large" href="{{ section.settings.link_url }}">{{ section.settings.link_text }}</a>
+          </p>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "General Card Banner",
+    "settings": [
+      {
+        "id": "image_background",
+        "type": "image_picker",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "General Banner"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Product information, assembly support, FAQS, user guides - everything in one place."
+      },
+      {
+        "type": "url",
+        "id": "link_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Button Text",
+        "default": "Button"
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "General Card Banner",
+      "category": "Text"
+    }]
+  }
+{% endschema %}
