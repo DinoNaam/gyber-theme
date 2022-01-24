@@ -90,11 +90,35 @@
         "divider": false,
         "per_row": 3
       }
+    },
+    "1642997431aa7de712": {
+      "type": "featured-content",
+      "blocks": {
+        "c8ca5fbc-f84c-4d3e-990e-aa8a05211b16": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "home_page_richtext": "<p>Address: 2625 E Cedar St, Ontario, California, United States, 91761<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c8ca5fbc-f84c-4d3e-990e-aa8a05211b16"
+      ],
+      "settings": {
+        "title": "Gyber INC.",
+        "text": "",
+        "align_text": "center",
+        "narrow_column": false,
+        "enlarge_text": true,
+        "divider": false
+      }
     }
   },
   "order": [
     "links",
     "contact",
-    "164299716607f53894"
+    "164299716607f53894",
+    "1642997431aa7de712"
   ]
 }
