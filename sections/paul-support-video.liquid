@@ -1,0 +1,154 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-support-video-section">
+  <div class="section-header text-{{ section.settings.align_text }}">
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="section-content">
+    <div class="page-width">
+      <div class="grid grid--uniform grid--flush-bottom">
+        {%- liquid
+          assign isEmpty = true
+          if section.blocks.size > 0
+            assign isEmpty = false
+          endif
+        -%}
+
+        {%- if isEmpty -%}
+          <div class="grid__item">
+            <div class="rte">
+              {{ 'home_page.onboarding.no_content' | t }}
+            </div>
+          </div>
+        {%- else -%}
+          {%- for block in section.blocks -%}
+            <div class="grid__item medium-up--one-third">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  {%- if block.settings.video_url == blank -%}
+                    <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                  {%- else -%}
+                    {%- if block.settings.video_url.type == "youtube" -%}
+                      <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                    {%- endif -%}
+                    {{ block.settings.video_url.alt }}
+                    {%- if block.settings.video_url.type == "vimeo" -%}
+                      <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                    {%- endif -%}
+                  {%- endif -%}
+                  {%- liquid
+                    if block.settings.title != blank
+                      assign title_output = block.settings.title
+                    else
+                      assign title_output = 'No Title'
+                    endif
+                  -%}
+                </div>
+                <p class="text-ellipsis">{{ title_output }}</p>
+                {%- if block.settings.download_url -%}
+                  <a class="paul-btn fill" href="{{ block.settings.download_url }}" target="_blank">Manual Download</a>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Support Video",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Assembly Videos"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here is what our customers say about our products"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Header Text Align",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Support Video",
+        "category": "Video",
+        "blocks": [
+          {
+            "type": "item"
+          },
+          {
+            "type": "item"
+          },
+          {
+            "type": "item"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Video",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "video_url",
+            "id": "video_url",
+            "label": "Video link",
+            "accept": ["youtube", "vimeo"]
+          },
+          {
+            "type": "url",
+            "id": "download_url",
+            "label": "Download link"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

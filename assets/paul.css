@@ -860,6 +860,42 @@ table, table td{
   max-height: 100em;
 }
 
+/* 
+  Support Page
+*/
+.paul-support-video-section{
+  padding: 4em 0;
+}
+
+.paul-support-video-section{
+  padding: 4em 0;
+  text-align: center;
+}
+
+.paul-support-video-section .video-item{
+  overflow: hidden;
+  border-radius: .25em;
+  padding-bottom: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .1);
+}
+
+.paul-support-video-section .video-wrapper{
+  height: 0;
+  display: block;
+  position: relative;
+  margin-bottom: 1em;
+  padding-bottom: 56%;
+}
+
+.paul-support-video-section iframe{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+}
+
 
 /* ! FAQ Reset */
 #paul-faq-page .paul-faq-list-section .grid--flush-bottom{
