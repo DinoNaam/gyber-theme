@@ -68,37 +68,16 @@
         "per_row": 3
       }
     },
-    "16428469705ffe5823": {
-      "type": "slideshow",
-      "blocks": {
-        "164284697097558bce-0": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "JOIN OUR VIP GROUP TODAY",
-            "title_size": 40,
-            "subheading": "Become a VIP member today and receive exclusive offers and updates.",
-            "link": "shopify:\/\/pages\/test",
-            "link_text": "Join Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ff4f33",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/123.png",
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "164284697097558bce-0"
-      ],
+    "16430166497d6753df": {
+      "type": "paul-general-banner-card",
       "settings": {
-        "section_height": "450px",
-        "mobile_height": "auto",
-        "parallax": true,
-        "style": "minimal",
-        "autoplay": true,
-        "autoplay_speed": 5
+        "image_background": "shopify:\/\/shop_images\/123.png",
+        "title": "JOIN OUR VIP GROUP TODAY",
+        "text": "Become a VIP member today and receive exclusive offers and updates.",
+        "link_url": "",
+        "link_text": "Join Now",
+        "align_text": "center",
+        "divider": false
       }
     },
     "recently": {
@@ -115,7 +94,7 @@
     "story",
     "recommendations",
     "1642849864eaa5db9f",
-    "16428469705ffe5823",
+    "16430166497d6753df",
     "recently"
   ]
 }
