@@ -1,0 +1,15 @@
+{
+  "name": "Contact US Page Template",
+  "wrapper": "div#paul-contact-page",
+  "sections": {
+    "links": {
+        "type": "paul-faq-icon-text"
+    },
+    "contact": {
+      "type": "page-contact-template"
+    }
+  },
+  "order": [
+    "links", "contact"
+  ]
+}
