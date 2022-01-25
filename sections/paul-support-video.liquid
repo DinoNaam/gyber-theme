@@ -43,18 +43,20 @@
                       <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
                     {%- endif -%}
                   {%- endif -%}
-                  {%- liquid
-                    if block.settings.title != blank
-                      assign title_output = block.settings.title
-                    else
-                      assign title_output = 'No Title'
-                    endif
-                  -%}
                 </div>
+                {%- liquid
+                  if block.settings.title != blank
+                    assign title_output = block.settings.title
+                  else
+                    assign title_output = 'No Title'
+                  endif
+                -%}
+                <div class="video-desc">
                 <p class="text-ellipsis">{{ title_output }}</p>
-                {%- if block.settings.download_url -%}
-                  <a class="paul-btn fill" href="{{ block.settings.download_url }}" target="_blank">Manual Download</a>
-                {%- endif -%}
+                  {%- if block.settings.download_url -%}
+                    <a class="paul-btn fill" href="{{ block.settings.download_url }}" target="_blank">Manual Download</a>
+                  {%- endif -%}
+                </div>
               </div>
             </div>
           {%- endfor -%}
