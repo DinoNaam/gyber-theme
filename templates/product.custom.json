@@ -65,7 +65,8 @@
       "settings": {
         "title": "Contact Us",
         "divider": false,
-        "per_row": 3
+        "per_row": 3,
+        "show_logo": true
       }
     },
     "16430166497d6753df": {
@@ -77,6 +78,35 @@
         "link_url": "",
         "link_text": "Join Now",
         "align_text": "center",
+        "divider": false
+      }
+    },
+    "16430985584afada32": {
+      "type": "paul-product-testimonials",
+      "blocks": {
+        "164309855802ab81ed-0": {
+          "type": "item",
+          "settings": {
+            "author": "Tim",
+            "comment": "I used it the first time and i was able to achieve a Ruth's Chris\/Morton steakhouse result! I would recommend this as a great device and a great value.",
+            "logo": "shopify:\/\/shop_images\/687b21f2ed6cb617aabefa5051b6b4a5.png"
+          }
+        },
+        "164309855802ab81ed-1": {
+          "type": "item",
+          "settings": {
+            "author": "",
+            "comment": ""
+          }
+        }
+      },
+      "block_order": [
+        "164309855802ab81ed-0",
+        "164309855802ab81ed-1"
+      ],
+      "settings": {
+        "title": "Our Customers Say",
+        "text": "Here is what our customers say about our products",
         "divider": false
       }
     },
@@ -95,6 +125,7 @@
     "recommendations",
     "1642849864eaa5db9f",
     "16430166497d6753df",
+    "16430985584afada32",
     "recently"
   ]
 }
