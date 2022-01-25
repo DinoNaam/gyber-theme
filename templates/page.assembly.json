@@ -1,6 +1,17 @@
 {
   "wrapper": "div#paul-assembly-support-page",
   "sections": {
+    "164309479421a3dafe": {
+      "type": "paul-general-banner",
+      "settings": {
+        "image_background": "shopify:\/\/shop_images\/d7c13d03b3e545b21fb33a6b6e110352.png",
+        "title": "ASSEMBLY SUPPORT",
+        "text": "",
+        "size": "small",
+        "style": "simple",
+        "divider": false
+      }
+    },
     "video": {
       "type": "paul-support-video",
       "blocks": {
@@ -49,9 +60,51 @@
         "divider": false,
         "align_text": "left"
       }
+    },
+    "1643094572f4314dde": {
+      "type": "paul-support-video",
+      "blocks": {
+        "1643094572771af35c-0": {
+          "type": "item",
+          "settings": {
+            "title": "L600D\/L600E (600D3E) ASSEMBLY VIDEO",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=SfzoXzwaUd4",
+            "download_url": "shopify:\/\/products\/11-inch-pizza-stone"
+          }
+        },
+        "1643094572771af35c-1": {
+          "type": "item",
+          "settings": {
+            "title": "550A ASSEMBLY VIDEO",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=wzDhOXRTAxg",
+            "download_url": "shopify:\/\/pages\/test"
+          }
+        },
+        "1643094572771af35c-2": {
+          "type": "item",
+          "settings": {
+            "title": "550B2 (5502H) ASSEMBLY VIDEO",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=nelDAs_J8AA",
+            "download_url": "shopify:\/\/pages\/test"
+          }
+        }
+      },
+      "block_order": [
+        "1643094572771af35c-0",
+        "1643094572771af35c-1",
+        "1643094572771af35c-2"
+      ],
+      "settings": {
+        "title": "ASSEMBLY VIDEOS | 600 SERIES",
+        "text": "",
+        "divider": false,
+        "align_text": "left"
+      }
     }
   },
   "order": [
-    "video"
+    "164309479421a3dafe",
+    "video",
+    "1643094572f4314dde"
   ]
 }
