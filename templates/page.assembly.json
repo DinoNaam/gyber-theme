@@ -7,17 +7,17 @@
         "7539f970-f279-494e-9e5f-7691c3b0a02a": {
           "type": "item",
           "settings": {
-            "title": "",
-            "video_url": "",
+            "title": "Wood fired steaks and roasted potatoes recipe",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=SfzoXzwaUd4",
             "download_url": "shopify:\/\/pages\/test"
           }
         },
         "efbae643-80d4-4da7-b1dd-27da43ebbce8": {
           "type": "item",
           "settings": {
-            "title": "",
-            "video_url": "",
-            "download_url": ""
+            "title": "Moonshine Bandits - \"Grillin' & Chillin\" Episode 1",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=wzDhOXRTAxg",
+            "download_url": "shopify:\/\/pages\/test"
           }
         },
         "04879b96-ab3a-491c-b706-c87e14603464": {
@@ -25,15 +25,15 @@
           "settings": {
             "title": "",
             "video_url": "",
-            "download_url": ""
+            "download_url": "shopify:\/\/pages\/test"
           }
         },
         "817e081a-0b04-4f8a-b0b5-e18e78cb9882": {
           "type": "item",
           "settings": {
-            "title": "",
-            "video_url": "",
-            "download_url": ""
+            "title": "Sweet buffalo wood fired chicken wings",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=nelDAs_J8AA",
+            "download_url": "shopify:\/\/products\/anvil-pro-gas-infrared-grill"
           }
         }
       },
@@ -44,8 +44,8 @@
         "817e081a-0b04-4f8a-b0b5-e18e78cb9882"
       ],
       "settings": {
-        "title": "Assembly Videos",
-        "text": "Here is what our customers say about our products",
+        "title": "ASSEMBLY VIDEOS | BASIC SERIES",
+        "text": "",
         "divider": false,
         "align_text": "left"
       }
