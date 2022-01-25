@@ -865,14 +865,16 @@ table, table td{
 */
 .paul-support-video-section{
   padding: 4em 0;
-}
-
-.paul-support-video-section{
-  padding: 4em 0;
   text-align: center;
 }
 
+.paul-support-video-section .grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .paul-support-video-section .video-item{
+  height: 100%;
   overflow: hidden;
   border-radius: .25em;
   padding-bottom: 1em;
@@ -882,9 +884,18 @@ table, table td{
 .paul-support-video-section .video-wrapper{
   height: 0;
   display: block;
+  background: #bbb;
+  user-select: none;
   position: relative;
   margin-bottom: 1em;
   padding-bottom: 56%;
+}
+
+.paul-support-video-section .video-wrapper p{
+  color: #555;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 10rem;
 }
 
 .paul-support-video-section iframe{
