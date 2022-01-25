@@ -1,9 +1,54 @@
 {
-  "name": "Assembly Support Page Template",
   "wrapper": "div#paul-assembly-support-page",
   "sections": {
     "video": {
-      "type": "paul-support-video"
+      "type": "paul-support-video",
+      "blocks": {
+        "7539f970-f279-494e-9e5f-7691c3b0a02a": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "video_url": "",
+            "download_url": "shopify:\/\/pages\/test"
+          }
+        },
+        "efbae643-80d4-4da7-b1dd-27da43ebbce8": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "video_url": "",
+            "download_url": ""
+          }
+        },
+        "04879b96-ab3a-491c-b706-c87e14603464": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "video_url": "",
+            "download_url": ""
+          }
+        },
+        "817e081a-0b04-4f8a-b0b5-e18e78cb9882": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "video_url": "",
+            "download_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "7539f970-f279-494e-9e5f-7691c3b0a02a",
+        "efbae643-80d4-4da7-b1dd-27da43ebbce8",
+        "04879b96-ab3a-491c-b706-c87e14603464",
+        "817e081a-0b04-4f8a-b0b5-e18e78cb9882"
+      ],
+      "settings": {
+        "title": "Assembly Videos",
+        "text": "Here is what our customers say about our products",
+        "divider": false,
+        "align_text": "left"
+      }
     }
   },
   "order": [
