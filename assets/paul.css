@@ -860,6 +860,65 @@ table, table td{
   max-height: 100em;
 }
 
+/* Testimonial With Logo */
+.paul-product-testimonial-section .swiper{
+  padding-bottom: 3em;
+}
+
+.paul-product-testimonial-section .swiper .swiper-pagination{
+  bottom: 0;
+}
+
+.paul-product-testimonial-section .swiper-pagination-bullet-active{
+  background-color: var(--paul-primary);
+}
+
+.paul-product-testimonial-section .paul-product-testimonial-item{
+  display: flex;
+}
+
+.paul-product-testimonial-section .testimonial-text{
+  text-align: center;
+}
+
+.paul-product-testimonial-section .testimonial-text p{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paul-product-testimonial-section .testimonial-text small{
+  opacity: .6;
+}
+
+.paul-product-testimonial-section .testimonial-text small::before{
+  content: "- ";
+}
+
+.paul-product-testimonial-section .testimonial-logo{
+  display: flex;
+  flex: 0 1 30%;
+  align-items: end;
+  justify-content: end;
+}
+
+.paul-product-testimonial-section .testimonial-logo img{
+  max-width: 10em;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+  .paul-product-testimonial-section .paul-product-testimonial-item{
+    flex-direction: column;
+  }
+
+  .paul-product-testimonial-section .testimonial-logo{
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+  }
+}
+
 /* 
   Support Page
 */

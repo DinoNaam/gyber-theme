@@ -1,0 +1,33 @@
+{%- liquid
+  if block.settings.comment != blank
+    assign comment_output = block.settings.comment
+  else
+    assign comment_output = 'Please Set Comment'
+  endif
+
+  if block.settings.author != blank
+    assign author_output = block.settings.author
+  else
+    assign author_output = 'Please Set Author'
+  endif
+-%}
+
+<div class="swiper-slide paul-product-testimonial-item">
+  <div class="testimonial-text">
+    <p>"{{ comment_output }}"</p>
+    <small>{{ author_output }}</small>
+  </div>
+  {%- if block.settings.logo != blank -%}
+    <div class="testimonial-logo">
+      {%- assign img_url = block.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <img class="lazyload"
+        data-src="{{ img_url }}"
+        data-widths="[180, 360, 540, 720, 900, 1080]"
+        data-aspectratio="{{ article.image.aspect_ratio }}"
+        data-sizes="auto"
+        alt="{{ article.image.alt }}"
+        loading="lazy"
+      />
+    </div>
+  {%- endif -%}
+</div>

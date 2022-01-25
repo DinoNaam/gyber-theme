@@ -1,0 +1,112 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="paul-product-testimonial-section paul-product-testimonial-section-{{ section.id }}">
+  <div class="section-header">
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="section-content">
+    <div class="page-width">
+      {%- liquid
+        assign isEmpty = true
+        if section.blocks.size > 0
+          assign isEmpty = false
+        endif
+      -%}
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          {%- for block in section.blocks -%}
+            {%- render 'paul-product-testimonials-item',
+              block: block
+            -%}
+          {%- endfor -%}
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      {%- if isEmpty -%}
+        <div class="rte">
+          {{ 'home_page.onboarding.no_content' | t }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% comment %} 该 Block 有什么类型？ {% endcomment %}
+{% comment %} https://shopify.dev/themes/architecture/settings/input-settings {% endcomment %}
+
+{% schema %}
+  {
+    "name": "Product Textimonials",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Our Customers Say"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Here is what our customers say about our products"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "Product Textimonials",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "id": "author",
+            "type": "text",
+            "label": "Author"
+          },
+          {
+            "id": "comment",
+            "type": "text",
+            "label": "Comment"
+          },
+          {
+            "id": "logo",
+            "type": "image_picker",
+            "label": "Logo"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
