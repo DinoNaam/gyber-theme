@@ -878,6 +878,7 @@ table, table td{
 }
 
 .paul-product-testimonial-section .testimonial-text{
+  flex: 1;
   text-align: center;
 }
 
@@ -1009,6 +1010,7 @@ table, table td{
 .product-single__description h2,
 .product-single__description-full h2{
   text-align: left;
+  position: relative;
   padding-left: .5em;
   border-left: 2px solid var(--paul-primary);
 }
