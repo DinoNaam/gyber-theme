@@ -1,4 +1,11 @@
 {%- style -%}
+  {%- if section.settings.size == 'large' -%}
+  .paul-community-banner-section-{{ section.id }}{
+    height: 45vw;
+    min-height: 35em;
+  }
+  {%- endif -%}
+
   .paul-community-banner-section-{{ section.id }} {
     {%- if section.settings.image_background != blank -%}
       background-image: url({{ section.settings.image_background | image_url: width: 2000 }});
@@ -66,6 +73,22 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "type": "select",
+        "id": "size",
+        "label": "Size",
+        "options": [
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          }
+        ],
+        "default": "medium"
       }
     ],
     "presets": [{

@@ -16,6 +16,7 @@
       ],
       "settings": {
         "image_background": "shopify:\/\/shop_images\/joe-1920-tiny.jpg",
+        "size": "large",
         "divider": false
       }
     },
