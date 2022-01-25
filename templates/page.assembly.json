@@ -1,0 +1,12 @@
+{
+  "name": "Assembly Support Page Template",
+  "wrapper": "div#paul-assembly-support-page",
+  "sections": {
+    "video": {
+      "type": "paul-support-video"
+    }
+  },
+  "order": [
+    "video"
+  ]
+}
