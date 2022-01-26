@@ -46,7 +46,7 @@
     "type_product_capitalize": true,
     "type_collection_font": "body",
     "type_collection_size": 18,
-    "button_style": "square",
+    "button_style": "round-slight",
     "icon_weight": "4px",
     "icon_linecaps": "round",
     "vendor_enable": false,
