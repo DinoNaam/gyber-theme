@@ -10,6 +10,10 @@ table, table td{
 }
 
 /* 辅助类 */
+.ml-3{
+  margin-left: 1.5em;
+}
+
 .text-primary{
   color: var(--paul-primary);
 }
@@ -41,6 +45,7 @@ table, table td{
   padding: .5em 1em;
   display: inline-block;
   color: var(--paul-primary);
+  border-radius: var(--buttonRadius);
   border: 2px solid var(--paul-primary);
 }
 
@@ -109,7 +114,7 @@ table, table td{
   color: #fff;
   height: 100%;
   padding: 3em 1em;
-  border-radius: 0.25em;
+  border-radius: var(--buttonRadius);
   background: #000 center/cover;
 }
 
@@ -274,7 +279,7 @@ table, table td{
   height: 100%;
   padding: 1em;
   background: #fff;
-  border-radius: .5em;
+  border-radius: var(--buttonRadius);
   position: relative;
 }
 
@@ -505,6 +510,7 @@ table, table td{
   position: relative;
   padding-bottom: 75%;
   margin-bottom: 1.5em;
+  background-color: #333;
 }
 
 @media screen and (max-width: 768px){
@@ -518,7 +524,6 @@ table, table td{
   height: 100%;
   object-fit: cover;
   position: absolute;
-  background-color: #333;
 }
 
 .member-item .item-card{
@@ -604,7 +609,7 @@ table, table td{
 .paul-faq-list-section .faq-list{
   height: 100%;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: var(--buttonRadius);
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
@@ -660,7 +665,7 @@ table, table td{
   display: block;
   padding: 2em 1.5em;
   text-align: center;
-  border-radius: .25em;
+  border-radius: var(--buttonRadius);
   background-color: #f0f0f0;
 }
 
@@ -693,7 +698,7 @@ table, table td{
   height: 100%;
   display: flex;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: var(--buttonRadius);
   background-color: #000;
 }
 
@@ -727,7 +732,7 @@ table, table td{
 
 .paul-faq-intro-card-section .wrapper{
   overflow: hidden;
-  border-radius: .5em;
+  border-radius: var(--buttonRadius);
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
@@ -771,7 +776,7 @@ table, table td{
 .paul-faq-icon-text-section .paul-icon-text-item{
   height: 100%;
   padding: 1em;
-  border-radius: .5em;
+  border-radius: var(--buttonRadius);
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
@@ -818,7 +823,7 @@ table, table td{
   content: "Q";
   font-size: 1.5em;
   text-align: center;
-  border-radius: 4px;
+  border-radius: var(--buttonRadius);
   transform: translateY(-50%);
   background-color: var(--paul-primary);
 }
@@ -935,7 +940,7 @@ table, table td{
 .paul-support-video-section .video-item{
   height: 100%;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: var(--buttonRadius);
   box-shadow: 0 0 1em rgba(0, 0, 0, .1);
 }
 
@@ -1052,7 +1057,7 @@ table, table td{
 .product-single__notice{
   padding: .75em;
   background: #eaeaea;
-  border-radius: 4px;
+  border-radius: var(--buttonRadius);
   margin-bottom: 30px;
 }
 
@@ -1127,4 +1132,26 @@ table, table td{
   #shopify-section-article-template .section-header{
     text-align: left;
   }
+}
+
+/* ! NewsLetter Section Reset */
+.newsletter__input-group .input-group-field:first-child{
+  color: var(--colorTextBody);
+  background: #fff;
+  border-top-left-radius: var(--buttonRadius, 0);
+  border-bottom-left-radius: var(--buttonRadius, 0);
+}
+
+.newsletter__input-group .input-group-btn:last-child .btn{
+  border-top-right-radius: var(--buttonRadius, 0);
+  border-bottom-right-radius: var(--buttonRadius, 0);
+}
+
+/* ! Footer Reset */
+.site-footer{
+  padding-bottom: 0;
+}
+
+.footer__small-text{
+  padding-bottom: 2em;
 }

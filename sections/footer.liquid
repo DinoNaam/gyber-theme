@@ -101,15 +101,15 @@
       {%- endunless -%}
     {%- endif -%}
 
+    <p class="footer__small-text">
     {%- if section.settings.show_copyright -%}
-      <p class="footer__small-text">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
-        {%- if section.settings.copyright_text != blank -%}
-          {{ section.settings.copyright_text }}
-        {%- endif -%}
-      </p>
+      &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+      {%- if section.settings.copyright_text != blank -%}
+        {{ section.settings.copyright_text }}
+      {%- endif -%}
     {%- endif -%}
-    <p class="footer__small-text">{{ powered_by_link }}</p>
+      <span class="ml-3">{{ powered_by_link }}</span>
+    </p>
 
   </div>
 </footer>

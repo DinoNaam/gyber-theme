@@ -29,9 +29,9 @@
     }
   {% endunless %}
 
-  .newsletter-{{ section.id }} .newsletter__input::-webkit-input-placeholder { color: {{ color }}; }
+  {% comment %} .newsletter-{{ section.id }} .newsletter__input::-webkit-input-placeholder { color: {{ color }}; }
   .newsletter-{{ section.id }} .newsletter__input::-moz-placeholder { color: {{ color }}; }
-  .newsletter-{{ section.id }} .newsletter__input::-ms-input-placeholder { color: {{ color }}; }
+  .newsletter-{{ section.id }} .newsletter__input::-ms-input-placeholder { color: {{ color }}; } {% endcomment %}
 {%- endstyle -%}
 
 <div class="newsletter-section newsletter-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} newsletter-section--with-divider{% endif %}">
