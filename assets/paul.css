@@ -423,12 +423,8 @@ table, table td{
   height: 100%;
 }
 
-.paul-community-banner-section .grid{
+.paul-community-banner-section .page-width{
   display: flex;
-}
-
-.paul-community-banner-section .grid__item{
-  height: 100%;
 }
 
 
@@ -449,11 +445,13 @@ table, table td{
 }
 
 .paul-community-banner-section .section-content{
+  width: 30%;
   height: 100%;
   display: flex;
+  min-width: 24em;
   padding: 3em 2em;
   flex-direction: column;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .4);
 }
 
 .paul-community-banner-section .section-header__title{
@@ -464,6 +462,13 @@ table, table td{
   margin-bottom: auto;
 }
 
+@media screen and (max-width: 768px){
+  .paul-community-banner-section .section-content{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+  }
+}
 
 /* Community About */
 .paul-community-about-section{
