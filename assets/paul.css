@@ -47,6 +47,7 @@ table, table td{
   color: var(--paul-primary);
   border-radius: var(--buttonRadius);
   border: 2px solid var(--paul-primary);
+  transition: color .3s, background .3s;
 }
 
 .paul-btn:not(.fill).white{
@@ -54,7 +55,7 @@ table, table td{
   border-color: #fff;
 }
 
-.paul-btn.fill{
+.paul-btn:not(.fill):hover, .paul-btn.fill{
   color: #fff;
   background: var(--paul-primary);
 }
@@ -1006,6 +1007,10 @@ table, table td{
   max-width: 1200px;
 }
 
+.template-product .main-content .rte a:not(.btn):after{
+  border-color: var(--paul-primary);
+}
+
 .page-content--product tr:nth-child(odd){
   background: rgba(0, 0, 0, .05);
 }
@@ -1145,6 +1150,12 @@ table, table td{
 .newsletter__input-group .input-group-btn:last-child .btn{
   border-top-right-radius: var(--buttonRadius, 0);
   border-bottom-right-radius: var(--buttonRadius, 0);
+}
+
+/* ! Contact & Comment */
+#paul-contact-page input, #paul-contact-page textarea,
+#shopify-section-article-template input, #shopify-section-article-template textarea, #shopify-section-article-template .btn--secondary{
+  border-color: #444;
 }
 
 /* ! Footer Reset */
