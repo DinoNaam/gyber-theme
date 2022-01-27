@@ -25,7 +25,7 @@
     {%- liquid
       if block.settings.replace_image
         assign collection_image = block.settings.replace_image
-      else if settings.collection_grid_image == 'collection' and collection.image
+      elsif settings.collection_grid_image == 'collection' and collection.image
         assign collection_image = collection.image
       else
         assign collection_image = collection.products.first.featured_media.preview_image
