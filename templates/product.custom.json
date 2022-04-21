@@ -56,11 +56,19 @@
             "title": "How does your return policy work?",
             "desc": "<p>Description<\/p>"
           }
+        },
+        "33c590df-de8e-4bbb-9181-7d1e9e580a1c": {
+          "type": "item",
+          "settings": {
+            "title": "hello",
+            "desc": "<p>test<\/p>"
+          }
         }
       },
       "block_order": [
         "1642849864096d80a2-0",
-        "1642849864096d80a2-1"
+        "1642849864096d80a2-1",
+        "33c590df-de8e-4bbb-9181-7d1e9e580a1c"
       ],
       "settings": {
         "title": "FAQS",
