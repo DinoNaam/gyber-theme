@@ -3,6 +3,7 @@
   "sections": {
     "videos": {
       "type": "paul-general-banner",
+      "disabled": true,
       "settings": {
         "image_background": "shopify:\/\/shop_images\/1231231213.png",
         "title": "DEAL OF THE WEEK",
@@ -54,9 +55,11 @@
     },
     "16430985584afada32": {
       "type": "paul-product-testimonials",
+      "disabled": true,
       "blocks": {
         "164309855802ab81ed-0": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "author": "Tim",
             "comment": "I used it the first time and i was able to achieve a Ruth's Chris\/Morton steakhouse result! I would recommend this as a great device and a great value.",
@@ -65,6 +68,7 @@
         },
         "164309855802ab81ed-1": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "author": "",
             "comment": ""
