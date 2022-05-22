@@ -51,6 +51,7 @@
     },
     "member": {
       "type": "paul-community-member",
+      "disabled": true,
       "blocks": {
         "8126c9d8-b16f-40a4-b495-0124eccfe849": {
           "type": "item",
